@@ -37,6 +37,7 @@
 		F2368FB51BA076E0004F6492 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB41BA076E0004F6492 /* SignUpVC.swift */; settings = {ASSET_TAGS = (); }; };
 		F2368FB71BA076F3004F6492 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB61BA076F3004F6492 /* ProfileVC.swift */; settings = {ASSET_TAGS = (); }; };
 		F2368FB91BA07707004F6492 /* InboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB81BA07707004F6492 /* InboxVC.swift */; settings = {ASSET_TAGS = (); }; };
+		F2368FBB1BA0EEDB004F6492 /* PlatonicLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2368FBA1BA0EEDB004F6492 /* PlatonicLogo.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		F2368FB41BA076E0004F6492 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		F2368FB61BA076F3004F6492 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		F2368FB81BA07707004F6492 /* InboxVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxVC.swift; sourceTree = "<group>"; };
+		F2368FBA1BA0EEDB004F6492 /* PlatonicLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlatonicLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 		F2368FAA1BA074BF004F6492 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F2368FBA1BA0EEDB004F6492 /* PlatonicLogo.png */,
 				F2368FAB1BA074F6004F6492 /* IntownLogo.png */,
 				F2368FA41BA074B2004F6492 /* cityOnlyLogo.png */,
 				F2368FA51BA074B2004F6492 /* facebookLoginButton.png */,
@@ -298,6 +301,7 @@
 				F2368F9C1BA0710F004F6492 /* Swipe.storyboard in Resources */,
 				F2368FAC1BA074F6004F6492 /* IntownLogo.png in Resources */,
 				81BA81501A49DA1800E65899 /* Main.storyboard in Resources */,
+				F2368FBB1BA0EEDB004F6492 /* PlatonicLogo.png in Resources */,
 				F2368FA81BA074B2004F6492 /* facebookLoginButton.png in Resources */,
 				F2368FA31BA07228004F6492 /* Profile.storyboard in Resources */,
 				F2368FA91BA074B2004F6492 /* twitterLoginButton.png in Resources */,

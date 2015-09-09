@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IntownLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ruu-aF-p3r">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlatonicLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ruu-aF-p3r">
                                 <rect key="frame" x="0.0" y="64" width="320" height="229"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xh-tj-uqK">
@@ -97,7 +97,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.98823529409999999" green="0.36862745099999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.78823529411764703" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="1xh-tj-uqK" firstAttribute="leading" secondItem="IBN-Q2-ZB5" secondAttribute="trailing" constant="2" id="0eO-wd-KUH"/>
                             <constraint firstItem="UwA-cv-eUx" firstAttribute="top" secondItem="ruu-aF-p3r" secondAttribute="bottom" constant="187" id="49W-j1-nRu"/>
@@ -127,7 +127,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IntownLogo.png" width="1569" height="1042"/>
+        <image name="PlatonicLogo.png" width="625" height="250"/>
         <image name="facebookLoginButton.png" width="566" height="121"/>
         <image name="twitterLoginButton.png" width="574" height="120"/>
     </resources>

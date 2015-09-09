@@ -18,9 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IntownLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="U9A-VZ-4hD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlatonicLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="U9A-VZ-4hD">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="253"/>
-                                <color key="backgroundColor" red="1" green="0.36862745099999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.78823529410000004" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwk-It-zZX">
                                 <rect key="frame" x="16" y="387" width="288" height="45"/>
@@ -95,7 +95,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.98823529409999999" green="0.36862745099999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.78823529410000004" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="hVW-fh-aUO" secondAttribute="centerY" constant="-132.5" id="0m8-YW-SFQ"/>
                             <constraint firstItem="zwk-It-zZX" firstAttribute="trailing" secondItem="ZoU-IY-Nlb" secondAttribute="trailingMargin" id="4Mq-uI-hte"/>
@@ -137,6 +137,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IntownLogo.png" width="1569" height="1042"/>
+        <image name="PlatonicLogo.png" width="625" height="250"/>
     </resources>
 </document>
