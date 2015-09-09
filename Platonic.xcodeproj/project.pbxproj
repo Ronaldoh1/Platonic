@@ -32,6 +32,11 @@
 		F2368FA91BA074B2004F6492 /* twitterLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2368FA61BA074B2004F6492 /* twitterLoginButton.png */; settings = {ASSET_TAGS = (); }; };
 		F2368FAC1BA074F6004F6492 /* IntownLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2368FAB1BA074F6004F6492 /* IntownLogo.png */; settings = {ASSET_TAGS = (); }; };
 		F2368FAF1BA07644004F6492 /* Mail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368FAE1BA07644004F6492 /* Mail.storyboard */; settings = {ASSET_TAGS = (); }; };
+		F2368FB11BA076B5004F6492 /* SinginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB01BA076B5004F6492 /* SinginVC.swift */; settings = {ASSET_TAGS = (); }; };
+		F2368FB31BA076CB004F6492 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB21BA076CB004F6492 /* WelcomeVC.swift */; settings = {ASSET_TAGS = (); }; };
+		F2368FB51BA076E0004F6492 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB41BA076E0004F6492 /* SignUpVC.swift */; settings = {ASSET_TAGS = (); }; };
+		F2368FB71BA076F3004F6492 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB61BA076F3004F6492 /* ProfileVC.swift */; settings = {ASSET_TAGS = (); }; };
+		F2368FB91BA07707004F6492 /* InboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB81BA07707004F6492 /* InboxVC.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +68,11 @@
 		F2368FA61BA074B2004F6492 /* twitterLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterLoginButton.png; sourceTree = SOURCE_ROOT; };
 		F2368FAB1BA074F6004F6492 /* IntownLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IntownLogo.png; path = ../../InTownApp/IntownLogo.png; sourceTree = "<group>"; };
 		F2368FAE1BA07644004F6492 /* Mail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mail.storyboard; sourceTree = "<group>"; };
+		F2368FB01BA076B5004F6492 /* SinginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinginVC.swift; sourceTree = "<group>"; };
+		F2368FB21BA076CB004F6492 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		F2368FB41BA076E0004F6492 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		F2368FB61BA076F3004F6492 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		F2368FB81BA07707004F6492 /* InboxVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				F2368F971BA06BCB004F6492 /* Signin.storyboard */,
+				F2368FB01BA076B5004F6492 /* SinginVC.swift */,
 			);
 			name = SignIn;
 			sourceTree = "<group>";
@@ -179,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				F2368F9D1BA07129004F6492 /* Welcome.storyboard */,
+				F2368FB21BA076CB004F6492 /* WelcomeVC.swift */,
 			);
 			name = Welcome;
 			sourceTree = "<group>";
@@ -187,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				F2368F9F1BA0720E004F6492 /* SignUp.storyboard */,
+				F2368FB41BA076E0004F6492 /* SignUpVC.swift */,
 			);
 			name = SignUp;
 			sourceTree = "<group>";
@@ -195,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				F2368FA21BA07228004F6492 /* Profile.storyboard */,
+				F2368FB61BA076F3004F6492 /* ProfileVC.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -214,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				F2368FAE1BA07644004F6492 /* Mail.storyboard */,
+				F2368FB81BA07707004F6492 /* InboxVC.swift */,
 			);
 			name = Mail;
 			sourceTree = "<group>";
@@ -316,8 +331,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2368FB71BA076F3004F6492 /* ProfileVC.swift in Sources */,
+				F2368FB91BA07707004F6492 /* InboxVC.swift in Sources */,
+				F2368FB11BA076B5004F6492 /* SinginVC.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				F2368FB51BA076E0004F6492 /* SignUpVC.swift in Sources */,
+				F2368FB31BA076CB004F6492 /* WelcomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

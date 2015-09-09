@@ -42,6 +42,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignUpButtonTapped:" destination="Zyr-oN-uD4" eventType="touchUpInside" id="cb9-Wj-7lS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e8-xH-tWs">
                                 <rect key="frame" x="9" y="404" width="141" height="40"/>
@@ -52,6 +55,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignInWithFacebookButtonTapped:" destination="Zyr-oN-uD4" eventType="touchUpInside" id="CVK-YG-U4Q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o69-is-1h3">
                                 <rect key="frame" x="171" y="404" width="140" height="40"/>
@@ -61,6 +67,9 @@
                                 <state key="normal" image="twitterLoginButton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignInWithTwitterButtonTapped:" destination="Zyr-oN-uD4" eventType="touchUpInside" id="nfi-vA-OZu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyy-0g-ygJ">
                                 <rect key="frame" x="157" y="413" width="7" height="21"/>
@@ -83,6 +92,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignInButtonTapped:" destination="Zyr-oN-uD4" eventType="touchUpInside" id="Cck-xh-IDE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.36862745099999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
