@@ -31,6 +31,7 @@
 		F2368FA81BA074B2004F6492 /* facebookLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2368FA51BA074B2004F6492 /* facebookLoginButton.png */; settings = {ASSET_TAGS = (); }; };
 		F2368FA91BA074B2004F6492 /* twitterLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2368FA61BA074B2004F6492 /* twitterLoginButton.png */; settings = {ASSET_TAGS = (); }; };
 		F2368FAC1BA074F6004F6492 /* IntownLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2368FAB1BA074F6004F6492 /* IntownLogo.png */; settings = {ASSET_TAGS = (); }; };
+		F2368FAF1BA07644004F6492 /* Mail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368FAE1BA07644004F6492 /* Mail.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		F2368FA51BA074B2004F6492 /* facebookLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookLoginButton.png; sourceTree = SOURCE_ROOT; };
 		F2368FA61BA074B2004F6492 /* twitterLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterLoginButton.png; sourceTree = SOURCE_ROOT; };
 		F2368FAB1BA074F6004F6492 /* IntownLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IntownLogo.png; path = ../../InTownApp/IntownLogo.png; sourceTree = "<group>"; };
+		F2368FAE1BA07644004F6492 /* Mail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mail.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +107,13 @@
 		81BA81471A49DA1800E65899 /* Platonic */ = {
 			isa = PBXGroup;
 			children = (
-				F2368FAA1BA074BF004F6492 /* Images */,
+				F2368FAD1BA0762C004F6492 /* Mail */,
 				F2368FA11BA07217004F6492 /* Profile */,
 				F2368F9A1BA070EE004F6492 /* SignUp */,
 				F2368F991BA070DF004F6492 /* Welcome */,
 				F2368F961BA06B73004F6492 /* Main */,
 				F2368F951BA06B67004F6492 /* SignIn */,
+				F2368FAA1BA074BF004F6492 /* Images */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				81BA814E1A49DA1800E65899 /* Main.storyboard */,
@@ -207,6 +210,14 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		F2368FAD1BA0762C004F6492 /* Mail */ = {
+			isa = PBXGroup;
+			children = (
+				F2368FAE1BA07644004F6492 /* Mail.storyboard */,
+			);
+			name = Mail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,6 +286,7 @@
 				F2368FA81BA074B2004F6492 /* facebookLoginButton.png in Resources */,
 				F2368FA31BA07228004F6492 /* Profile.storyboard in Resources */,
 				F2368FA91BA074B2004F6492 /* twitterLoginButton.png in Resources */,
+				F2368FAF1BA07644004F6492 /* Mail.storyboard in Resources */,
 				81BA81521A49DA1800E65899 /* Images.xcassets in Resources */,
 				F2368FA71BA074B2004F6492 /* cityOnlyLogo.png in Resources */,
 			);
