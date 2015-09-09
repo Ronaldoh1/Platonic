@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "92EC94EB1FCBA102164C47D5FD2D9A8B0F98C00F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "885A163CA84D47C3FE3CB6ED54271E71908C7EC5" : 0,
+    "92EC94EB1FCBA102164C47D5FD2D9A8B0F98C00F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F2A085B6-919F-4481-B2CD-7FD73523FDD9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "885A163CA84D47C3FE3CB6ED54271E71908C7EC5" : "InTownApp\/",
+    "92EC94EB1FCBA102164C47D5FD2D9A8B0F98C00F" : "Platonic\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Platonic",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Platonic.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Ronaldoh1\/InTown.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "885A163CA84D47C3FE3CB6ED54271E71908C7EC5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Ronaldoh1\/Platonic.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "92EC94EB1FCBA102164C47D5FD2D9A8B0F98C00F"
+    }
+  ]
+}
