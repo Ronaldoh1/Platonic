@@ -79,13 +79,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         installation.setDeviceTokenFromData(deviceToken)
         installation.saveInBackground()
         
-//        PFPush.subscribeToChannelInBackground("") { (succeeded: Bool, error: NSError?) in
-//            if succeeded {
-//                print("ParseStarterProject successfully subscribed to push notifications on the broadcast channel.");
-//            } else {
-//                print("ParseStarterProject failed to subscribe to push notifications on the broadcast channel with error = %@.", error)
-//            }
-//        }
+        PFPush.subscribeToChannelInBackground("") { (succeeded: Bool, error: NSError?) in
+            if succeeded {
+                print("ParseStarterProject successfully subscribed to push notifications on the broadcast channel.");
+            } else {
+                print("ParseStarterProject failed to subscribe to push notifications on the broadcast channel with error = %@.", error)
+            }
+        }
     }
 
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {

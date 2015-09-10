@@ -28,6 +28,12 @@ class WelcomeVC: UIViewController {
 
     @IBAction func onSignInWithFacebookButtonTapped(sender: AnyObject) {
 
+        var storyboard = UIStoryboard(name: "SignIn", bundle: nil)
+        var controller = storyboard.instantiateViewControllerWithIdentifier("SignInVC") as! UINavigationController
+        self.presentViewController(controller, animated: true, completion: nil)
+
+
+
 
     }
     @IBAction func onSignInWithTwitterButtonTapped(sender: AnyObject) {
@@ -39,6 +45,10 @@ class WelcomeVC: UIViewController {
         
     }
     @IBAction func onSignUpButtonTapped(sender: AnyObject) {
+        var storyboard = UIStoryboard(name: "SignUp", bundle: nil)
+        var controller = storyboard.instantiateViewControllerWithIdentifier("SignUpVC") as! UINavigationController
+        self.presentViewController(controller, animated: true, completion: nil)
+
     }
 }
 

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -9,7 +8,7 @@
         <!--Let's Get Started-->
         <scene sceneID="LQ7-kV-Gd4">
             <objects>
-                <viewController storyboardIdentifier="SignUpVC" id="A5K-Sg-sXa" customClass="SignUpVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" id="A5K-Sg-sXa" customClass="SignUpVC" customModule="Platonic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tLl-2m-9z1"/>
                         <viewControllerLayoutGuide type="bottom" id="ZPW-3a-f7G"/>
