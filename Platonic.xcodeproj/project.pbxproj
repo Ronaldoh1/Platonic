@@ -22,7 +22,7 @@
 		C806B7521B53F8CF003FC807 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C806B7511B53F8CF003FC807 /* ParseFacebookUtilsV4.framework */; };
 		C8DC2D721B53B54C00CEAEDA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DC2D701B53B54B00CEAEDA /* FBSDKCoreKit.framework */; };
 		C8DC2D731B53B54C00CEAEDA /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DC2D711B53B54C00CEAEDA /* FBSDKLoginKit.framework */; };
-		F2368F981BA06BCB004F6492 /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368F971BA06BCB004F6492 /* Signin.storyboard */; settings = {ASSET_TAGS = (); }; };
+		F2368F981BA06BCB004F6492 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368F971BA06BCB004F6492 /* SignIn.storyboard */; settings = {ASSET_TAGS = (); }; };
 		F2368F9C1BA0710F004F6492 /* Swipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368F9B1BA0710F004F6492 /* Swipe.storyboard */; settings = {ASSET_TAGS = (); }; };
 		F2368F9E1BA07129004F6492 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368F9D1BA07129004F6492 /* Welcome.storyboard */; settings = {ASSET_TAGS = (); }; };
 		F2368FA01BA0720E004F6492 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368F9F1BA0720E004F6492 /* SignUp.storyboard */; settings = {ASSET_TAGS = (); }; };
@@ -59,7 +59,7 @@
 		C806B7511B53F8CF003FC807 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		C8DC2D701B53B54B00CEAEDA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ParseStarterProject/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		C8DC2D711B53B54C00CEAEDA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ParseStarterProject/FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		F2368F971BA06BCB004F6492 /* Signin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
+		F2368F971BA06BCB004F6492 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		F2368F9B1BA0710F004F6492 /* Swipe.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Swipe.storyboard; sourceTree = "<group>"; };
 		F2368F9D1BA07129004F6492 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		F2368F9F1BA0720E004F6492 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 		F2368F951BA06B67004F6492 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				F2368F971BA06BCB004F6492 /* Signin.storyboard */,
+				F2368F971BA06BCB004F6492 /* SignIn.storyboard */,
 				F2368FB01BA076B5004F6492 /* SinginVC.swift */,
 			);
 			name = SignIn;
@@ -296,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2368F9E1BA07129004F6492 /* Welcome.storyboard in Resources */,
-				F2368F981BA06BCB004F6492 /* Signin.storyboard in Resources */,
+				F2368F981BA06BCB004F6492 /* SignIn.storyboard in Resources */,
 				F2368FA01BA0720E004F6492 /* SignUp.storyboard in Resources */,
 				F2368F9C1BA0710F004F6492 /* Swipe.storyboard in Resources */,
 				F2368FAC1BA074F6004F6492 /* IntownLogo.png in Resources */,

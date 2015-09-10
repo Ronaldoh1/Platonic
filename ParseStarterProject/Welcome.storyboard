@@ -119,6 +119,10 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="signInButton" destination="IBN-Q2-ZB5" id="cWq-kc-plf"/>
+                        <outlet property="signUpButton" destination="o3e-hN-1po" id="oMk-2u-jvv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpW-Ae-eTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
