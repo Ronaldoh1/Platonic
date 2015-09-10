@@ -20,7 +20,6 @@ class WelcomeVC: UIViewController {
 
 
 
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,9 +29,7 @@ class WelcomeVC: UIViewController {
 
     @IBAction func onSignInWithFacebookButtonTapped(sender: AnyObject) {
 
-        var storyboard = UIStoryboard(name: "SignIn", bundle: nil)
-        var controller = storyboard.instantiateViewControllerWithIdentifier("SignInVC") as! UINavigationController
-        self.presentViewController(controller, animated: true, completion: nil)
+
 
 
 
@@ -43,6 +40,10 @@ class WelcomeVC: UIViewController {
 
     }
     @IBAction func onSignInButtonTapped(sender: AnyObject) {
+
+        let storyboard = UIStoryboard(name: "SignIn", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("SignInVC")
+        self.presentViewController(controller, animated: true, completion: nil)
 
         
     }

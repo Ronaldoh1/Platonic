@@ -42,7 +42,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onSignUpButtonTapped:" destination="Zyr-oN-uD4" eventType="touchUpInside" id="cb9-Wj-7lS"/>
+                                    <action selector="onSignUpButtonTapped:" destination="Zyr-oN-uD4" eventType="touchUpInside" id="Psj-W6-b4x"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e8-xH-tWs">
@@ -54,9 +54,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="onSignInWithFacebookButtonTapped:" destination="Zyr-oN-uD4" eventType="touchUpInside" id="CVK-YG-U4Q"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o69-is-1h3">
                                 <rect key="frame" x="171" y="404" width="140" height="40"/>
@@ -66,9 +63,6 @@
                                 <state key="normal" image="twitterLoginButton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="onSignInWithTwitterButtonTapped:" destination="Zyr-oN-uD4" eventType="touchUpInside" id="nfi-vA-OZu"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyy-0g-ygJ">
                                 <rect key="frame" x="157" y="413" width="7" height="21"/>
@@ -92,7 +86,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onSignInButtonTapped:" destination="Zyr-oN-uD4" eventType="touchUpInside" id="Cck-xh-IDE"/>
+                                    <action selector="onSignInButtonTapped:" destination="Zyr-oN-uD4" eventType="touchUpInside" id="rI8-0O-jfq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -119,14 +113,10 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="signInButton" destination="IBN-Q2-ZB5" id="cWq-kc-plf"/>
-                        <outlet property="signUpButton" destination="o3e-hN-1po" id="oMk-2u-jvv"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpW-Ae-eTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="251" y="286"/>
+            <point key="canvasLocation" x="310" y="287"/>
         </scene>
     </scenes>
     <resources>

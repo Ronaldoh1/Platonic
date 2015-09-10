@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
-		81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814C1A49DA1800E65899 /* ViewController.swift */; };
 		81BA81501A49DA1800E65899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BA814E1A49DA1800E65899 /* Main.storyboard */; };
 		81BA81521A49DA1800E65899 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BA81511A49DA1800E65899 /* Images.xcassets */; };
 		81BA81701A49DB6800E65899 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA816B1A49DB6800E65899 /* Bolts.framework */; };
@@ -32,12 +30,14 @@
 		F2368FA91BA074B2004F6492 /* twitterLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2368FA61BA074B2004F6492 /* twitterLoginButton.png */; settings = {ASSET_TAGS = (); }; };
 		F2368FAC1BA074F6004F6492 /* IntownLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2368FAB1BA074F6004F6492 /* IntownLogo.png */; settings = {ASSET_TAGS = (); }; };
 		F2368FAF1BA07644004F6492 /* Mail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368FAE1BA07644004F6492 /* Mail.storyboard */; settings = {ASSET_TAGS = (); }; };
-		F2368FB11BA076B5004F6492 /* SinginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB01BA076B5004F6492 /* SinginVC.swift */; settings = {ASSET_TAGS = (); }; };
-		F2368FB31BA076CB004F6492 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB21BA076CB004F6492 /* WelcomeVC.swift */; settings = {ASSET_TAGS = (); }; };
-		F2368FB51BA076E0004F6492 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB41BA076E0004F6492 /* SignUpVC.swift */; settings = {ASSET_TAGS = (); }; };
-		F2368FB71BA076F3004F6492 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB61BA076F3004F6492 /* ProfileVC.swift */; settings = {ASSET_TAGS = (); }; };
-		F2368FB91BA07707004F6492 /* InboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB81BA07707004F6492 /* InboxVC.swift */; settings = {ASSET_TAGS = (); }; };
 		F2368FBB1BA0EEDB004F6492 /* PlatonicLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2368FBA1BA0EEDB004F6492 /* PlatonicLogo.png */; settings = {ASSET_TAGS = (); }; };
+		F23C73691BA1C0D800B114FE /* InboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB81BA07707004F6492 /* InboxVC.swift */; };
+		F23C736A1BA1C0D800B114FE /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB61BA076F3004F6492 /* ProfileVC.swift */; };
+		F23C736B1BA1C0D800B114FE /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB41BA076E0004F6492 /* SignUpVC.swift */; };
+		F23C736C1BA1C0D800B114FE /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB21BA076CB004F6492 /* WelcomeVC.swift */; };
+		F23C736D1BA1C0D800B114FE /* SinginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB01BA076B5004F6492 /* SinginVC.swift */; };
+		F23C736E1BA1C0D800B114FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
+		F23C736F1BA1C0D800B114FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814C1A49DA1800E65899 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -335,13 +335,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2368FB71BA076F3004F6492 /* ProfileVC.swift in Sources */,
-				F2368FB91BA07707004F6492 /* InboxVC.swift in Sources */,
-				F2368FB11BA076B5004F6492 /* SinginVC.swift in Sources */,
-				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
-				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
-				F2368FB51BA076E0004F6492 /* SignUpVC.swift in Sources */,
-				F2368FB31BA076CB004F6492 /* WelcomeVC.swift in Sources */,
+				F23C73691BA1C0D800B114FE /* InboxVC.swift in Sources */,
+				F23C736A1BA1C0D800B114FE /* ProfileVC.swift in Sources */,
+				F23C736B1BA1C0D800B114FE /* SignUpVC.swift in Sources */,
+				F23C736C1BA1C0D800B114FE /* WelcomeVC.swift in Sources */,
+				F23C736D1BA1C0D800B114FE /* SinginVC.swift in Sources */,
+				F23C736E1BA1C0D800B114FE /* AppDelegate.swift in Sources */,
+				F23C736F1BA1C0D800B114FE /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
