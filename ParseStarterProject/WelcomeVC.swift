@@ -10,7 +10,7 @@ import UIKit
 import Parse
 import FBSDKCoreKit
 
-class WelcomeVC: UIViewController {
+class WelcomeVC:  UIViewController {
 
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!

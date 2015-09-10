@@ -8,7 +8,7 @@
         <!--Intial Screen-->
         <scene sceneID="YfC-QS-kc1">
             <objects>
-                <viewController storyboardIdentifier="WelcomeVC" title="Intial Screen" id="Zyr-oN-uD4" customClass="WelcomeVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeVC" title="Intial Screen" id="Zyr-oN-uD4" customClass="WelcomeVC" customModule="Platonic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SUa-p6-66m"/>
                         <viewControllerLayoutGuide type="bottom" id="UwA-cv-eUx"/>
