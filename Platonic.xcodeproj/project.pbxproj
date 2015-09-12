@@ -39,11 +39,11 @@
 		F23C736E1BA1C0D800B114FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
 		F23C736F1BA1C0D800B114FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814C1A49DA1800E65899 /* ViewController.swift */; };
 		F23C73711BA3726400B114FE /* SwipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C73701BA3726400B114FE /* SwipeVC.swift */; settings = {ASSET_TAGS = (); }; };
-		F23C73741BA3732E00B114FE /* CompleteProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C73731BA3732E00B114FE /* CompleteProfile.swift */; settings = {ASSET_TAGS = (); }; };
 		F23C73761BA3734F00B114FE /* CompleteProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23C73751BA3734F00B114FE /* CompleteProfile.storyboard */; settings = {ASSET_TAGS = (); }; };
 		F23C73791BA3755F00B114FE /* Policy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23C73781BA3755F00B114FE /* Policy.storyboard */; settings = {ASSET_TAGS = (); }; };
 		F23C737B1BA3758600B114FE /* TermsAndConditionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C737A1BA3758600B114FE /* TermsAndConditionsVC.swift */; settings = {ASSET_TAGS = (); }; };
 		F23C737D1BA3A2D100B114FE /* InterestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C737C1BA3A2D100B114FE /* InterestVC.swift */; settings = {ASSET_TAGS = (); }; };
+		F23C737F1BA3A61D00B114FE /* CompleteProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C737E1BA3A61D00B114FE /* CompleteProfileVC.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,11 +82,11 @@
 		F2368FB81BA07707004F6492 /* InboxVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxVC.swift; sourceTree = "<group>"; };
 		F2368FBA1BA0EEDB004F6492 /* PlatonicLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlatonicLogo.png; sourceTree = "<group>"; };
 		F23C73701BA3726400B114FE /* SwipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeVC.swift; sourceTree = "<group>"; };
-		F23C73731BA3732E00B114FE /* CompleteProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteProfile.swift; sourceTree = "<group>"; };
 		F23C73751BA3734F00B114FE /* CompleteProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CompleteProfile.storyboard; sourceTree = "<group>"; };
 		F23C73781BA3755F00B114FE /* Policy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Policy.storyboard; sourceTree = "<group>"; };
 		F23C737A1BA3758600B114FE /* TermsAndConditionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsVC.swift; sourceTree = "<group>"; };
 		F23C737C1BA3A2D100B114FE /* InterestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestVC.swift; sourceTree = "<group>"; };
+		F23C737E1BA3A61D00B114FE /* CompleteProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompleteProfileVC.swift; path = ../CompleteProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,8 +254,8 @@
 		F23C73721BA372FF00B114FE /* Complete Profile */ = {
 			isa = PBXGroup;
 			children = (
-				F23C73731BA3732E00B114FE /* CompleteProfile.swift */,
 				F23C73751BA3734F00B114FE /* CompleteProfile.storyboard */,
+				F23C737E1BA3A61D00B114FE /* CompleteProfileVC.swift */,
 				F23C737C1BA3A2D100B114FE /* InterestVC.swift */,
 			);
 			name = "Complete Profile";
@@ -371,9 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23C737F1BA3A61D00B114FE /* CompleteProfileVC.swift in Sources */,
 				F23C73691BA1C0D800B114FE /* InboxVC.swift in Sources */,
 				F23C737D1BA3A2D100B114FE /* InterestVC.swift in Sources */,
-				F23C73741BA3732E00B114FE /* CompleteProfile.swift in Sources */,
 				F23C73711BA3726400B114FE /* SwipeVC.swift in Sources */,
 				F23C736A1BA1C0D800B114FE /* ProfileVC.swift in Sources */,
 				F23C736B1BA1C0D800B114FE /* SignUpVC.swift in Sources */,

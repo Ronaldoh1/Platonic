@@ -14,6 +14,8 @@ import FBSDKCoreKit
 class SignInVC: UIViewController{
      var inputTextField: UITextField?
 
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var username: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,10 +31,15 @@ class SignInVC: UIViewController{
     }
     @IBAction func onSignInButtonTapped(sender: UIButton) {
 
-        PFUser.logInWithUsernameInBackground("myname", password:"mypass") {
+        PFUser.logInWithUsernameInBackground(self.username.text!, password:self.password.text!) {
             (user: PFUser?, error: NSError?) -> Void in
             if user != nil {
                 // Do stuff after successful login.
+
+                let storyboard = UIStoryboard(name: "Swipe", bundle: nil)
+                let controller = storyboard.instantiateViewControllerWithIdentifier("SwipeVC")
+                self.presentViewController(controller, animated: true, completion: nil)
+
             } else {
                 // The login failed. Check error to see why.
             }

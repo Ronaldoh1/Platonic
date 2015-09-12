@@ -181,7 +181,7 @@
         <!--Navigation Controller-->
         <scene sceneID="kzP-bN-mMJ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g7m-iq-oRI" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="completeProfileVC" automaticallyAdjustsScrollViewInsets="NO" id="g7m-iq-oRI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cgb-ce-p19">

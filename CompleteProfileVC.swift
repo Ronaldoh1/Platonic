@@ -1,5 +1,5 @@
 //
-//  CompleteProfile.swift
+//  CompleteProfileVC.swift
 //  Platonic
 //
 //  Created by Ronald Hernandez on 9/11/15.
@@ -8,10 +8,8 @@
 
 import UIKit
 
-class CompleteProfile: UIViewController {
+class CompleteProfileVC: UIViewController {
 
-    @IBOutlet var aboutMe: [UITextView]!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,10 +20,8 @@ class CompleteProfile: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
-
-    @IBAction func onNextButtonTapped(sender: UIBarButtonItem) {
-    }
     /*
     // MARK: - Navigation
 

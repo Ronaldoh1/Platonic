@@ -26,7 +26,7 @@ class SignUpVC: UIViewController {
     @IBAction func onSignUpButtonTapped(sender: UIButton) {
 
         let user = PFUser()
-        user.username = emailTextfield.text
+        user.username = usernameTextField.text
         user.password = passwordTextField.text
         user.email = emailTextfield.text
 
@@ -38,8 +38,8 @@ class SignUpVC: UIViewController {
             } else {
                 // Hooray! Let them use the app now.
 
-                let storyboard = UIStoryboard(name: "Swipe", bundle: nil)
-                let controller = storyboard.instantiateViewControllerWithIdentifier("SwipeVC")
+                let storyboard = UIStoryboard(name: "CompleteProfile", bundle: nil)
+                let controller = storyboard.instantiateViewControllerWithIdentifier("completeProfileVC")
                 self.presentViewController(controller, animated: true, completion: nil)
             }
         }
