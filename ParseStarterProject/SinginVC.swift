@@ -92,7 +92,9 @@ class SignInVC: UIViewController{
 
     @IBAction func onSignUpButtonTapped(sender: UIButton) {
 
-        
+        let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("SignUpVC")
+        self.presentViewController(controller, animated: true, completion: nil)
 
 
 
