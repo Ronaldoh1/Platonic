@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -71,6 +72,9 @@
                                     <color key="titleColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignUpButtonTapped:" destination="A5K-Sg-sXa" eventType="touchUpInside" id="dFw-GF-ueh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITC-NF-Gyu">
                                 <rect key="frame" x="91" y="428" width="141" height="40"/>
@@ -80,16 +84,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtK-ns-wpJ">
-                                <rect key="frame" x="16" y="382" width="288" height="19"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="19" id="uxO-c1-Lnt"/>
-                                </constraints>
-                                <state key="normal" title="Terms &amp; Conditions">
-                                    <color key="titleColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <connections>
+                                    <action selector="onCancelButtonTapped:" destination="A5K-Sg-sXa" eventType="touchUpInside" id="QSY-4u-1c3"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NGu-iz-ju8">
                                 <rect key="frame" x="0.0" y="229" width="320" height="40"/>
@@ -103,6 +100,19 @@
                                     <outlet property="delegate" destination="A5K-Sg-sXa" id="qL9-OJ-IvV"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtK-ns-wpJ">
+                                <rect key="frame" x="16" y="382" width="288" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="uxO-c1-Lnt"/>
+                                </constraints>
+                                <state key="normal" title="Terms &amp; Conditions">
+                                    <color key="titleColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTermsAndConditionsButtonTapped:" destination="A5K-Sg-sXa" eventType="touchUpInside" id="yJd-4I-UTD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.78823529410000004" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -139,6 +149,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="NMy-iZ-blM" id="EcS-AP-jdJ"/>
+                        <outlet property="passwordTextField" destination="7SC-Cl-YyB" id="eU6-P3-RnC"/>
+                        <outlet property="usernameTextField" destination="NGu-iz-ju8" id="wiv-py-QCh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UDF-oI-61b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

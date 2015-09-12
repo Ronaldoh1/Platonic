@@ -17,7 +17,11 @@ class WelcomeVC:  UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.signInButton.layer.borderColor = UIColor.whiteColor().CGColor
+        self.signInButton.layer.borderWidth = 3.0
 
+        self.signUpButton.layer.borderColor = UIColor.whiteColor().CGColor
+        self.signUpButton.layer.borderWidth = 3.0
 
 
     }
@@ -48,8 +52,8 @@ class WelcomeVC:  UIViewController {
         
     }
     @IBAction func onSignUpButtonTapped(sender: AnyObject) {
-        var storyboard = UIStoryboard(name: "SignUp", bundle: nil)
-        var controller = storyboard.instantiateViewControllerWithIdentifier("SignUpVC") as! UINavigationController
+        let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("SignUpVC") 
         self.presentViewController(controller, animated: true, completion: nil)
 
     }

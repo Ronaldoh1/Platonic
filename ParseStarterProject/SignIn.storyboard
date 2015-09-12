@@ -31,6 +31,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignUpButtonTapped:" destination="nXT-He-PUP" eventType="touchUpInside" id="5ca-EB-dzP"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gb0-kU-6oG">
                                 <rect key="frame" x="0.0" y="251" width="320" height="40"/>
@@ -53,6 +56,9 @@
                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onForgotButtonTapped:" destination="nXT-He-PUP" eventType="touchUpInside" id="iU4-Of-vqk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePX-Jm-6qs">
                                 <rect key="frame" x="0.0" y="294" width="320" height="50"/>
@@ -63,6 +69,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignInButtonTapped:" destination="nXT-He-PUP" eventType="touchUpInside" id="fVa-q7-gpE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="l" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKA-NG-bEO">
                                 <rect key="frame" x="158" y="308" width="4" height="21"/>
@@ -92,6 +101,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onCancelButtonTapped:" destination="nXT-He-PUP" eventType="touchUpInside" id="LO0-A9-jHN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.78823529410000004" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>

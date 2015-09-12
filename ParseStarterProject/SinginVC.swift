@@ -11,7 +11,8 @@ import UIKit
 import Parse
 import FBSDKCoreKit
 
-class SignInVC: UIViewController {
+class SignInVC: UIViewController{
+     var inputTextField: UITextField?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +21,75 @@ class SignInVC: UIViewController {
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func onCancelButtonTapped(sender: UIButton) {
+
+        self.dismissViewControllerAnimated(true, completion: nil)
+
+
     }
+    @IBAction func onSignInButtonTapped(sender: UIButton) {
+
+        PFUser.logInWithUsernameInBackground("myname", password:"mypass") {
+            (user: PFUser?, error: NSError?) -> Void in
+            if user != nil {
+                // Do stuff after successful login.
+            } else {
+                // The login failed. Check error to see why.
+            }
+        }
+
+
+    }
+
+    @IBAction func onForgotButtonTapped(sender: UIButton) {
+
+        //Create the AlertController
+        let actionSheetController: UIAlertController = UIAlertController(title: "Reset Password", message: "Please enter your email address", preferredStyle: .Alert)
+
+        //Create and add the Cancel action
+        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel) { action -> Void in
+            //Do some stuff
+
+
+        }
+        actionSheetController.addAction(cancelAction)
+
+        //Add a text field
+        actionSheetController.addTextFieldWithConfigurationHandler { textField -> Void in
+            //TextField configuration
+            textField.textColor = UIColor(red: 0/255, green: 201/255, blue: 132/255, alpha: 1)
+            textField.placeholder = "Email"
+            self.inputTextField = textField;
+
+        }
+
+        //Create and an option action
+        let nextAction: UIAlertAction = UIAlertAction(title: "Reset", style: .Destructive) { action -> Void in
+            //Do some other stuff
+
+           PFUser.requestPasswordResetForEmailInBackground((self.inputTextField?.text!)!)
+
+
+
+        }
+
+        actionSheetController.addAction(nextAction)
+
+
+        //Present the AlertController
+        self.presentViewController(actionSheetController, animated: true, completion: nil)
+        
+
+
+    }
+
+    @IBAction func onSignUpButtonTapped(sender: UIButton) {
+
+        
+
+
+
+
+    }
+
 }

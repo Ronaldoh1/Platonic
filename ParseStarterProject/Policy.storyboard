@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+    </dependencies>
+    <scenes>
+        <!--Terms And Contitions-->
+        <scene sceneID="CPd-5W-DMZ">
+            <objects>
+                <viewController id="pXW-jz-Qvo" customClass="TermsAndConditionsVC" customModule="Platonic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TAh-Og-pCP"/>
+                        <viewControllerLayoutGuide type="bottom" id="swU-SW-Zva"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dfz-Kt-VLA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Terms And Contitions" id="DFH-vT-yaP">
+                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="FJ7-xd-LbZ">
+                            <color key="tintColor" red="0.0" green="0.78823529410000004" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onDoneButtonTapped:" destination="pXW-jz-Qvo" id="vJL-h8-leW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dX-E6-bRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="83"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x6Z-ea-dQV">
+            <objects>
+                <navigationController storyboardIdentifier="TermsAndConditionsNavVC" automaticallyAdjustsScrollViewInsets="NO" id="LY8-hP-If0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nis-gI-bSa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pXW-jz-Qvo" kind="relationship" relationship="rootViewController" id="cUe-m8-UzW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ylJ-lq-D7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="83"/>
+        </scene>
+    </scenes>
+</document>
