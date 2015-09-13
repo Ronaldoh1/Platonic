@@ -26,7 +26,7 @@ class CompleteProfileVC: UIViewController, UIImagePickerControllerDelegate, UINa
         // Do any additional setup after loading the view.
         self.imagePicker.delegate = self
 
-        //getting information from a user from facebook is called a GRAPH Request 
+        //getting information from a user from facebook is called a GRAPH Request
 
         let graphRequest: FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, gender"])
 
@@ -34,7 +34,7 @@ class CompleteProfileVC: UIViewController, UIImagePickerControllerDelegate, UINa
 
             (connection, result, error) -> Void in
 
-            //do simple check 
+            //do simple check
 
             if error != nil {
                 print(error)
@@ -43,7 +43,25 @@ class CompleteProfileVC: UIViewController, UIImagePickerControllerDelegate, UINa
                 User.currentUser()?["name"] = result["name"]
                 User.currentUser()?.save()
 
-            
+                let userId = result["id"] as! String
+
+                let facebookProfilePictureURL = "http://graph.facebook.com/" + userId + "/picture?type=large"
+
+                if let fbPicURl = NSURL(string: facebookProfilePictureURL){
+
+                    if let data = NSData(contentsOfURL: fbPicURl){
+
+                        self.profileImage.image = UIImage(data: data)
+
+                        let imageFile:PFFile = PFFile(data: data)
+
+                        User.currentUser()!["profileImage"] = imageFile
+
+                        User.currentUser()?.save()
+                    }
+
+
+                }
             }
         }
 
@@ -52,16 +70,16 @@ class CompleteProfileVC: UIViewController, UIImagePickerControllerDelegate, UINa
 
     @IBAction func onNextButtonTapped(sender: AnyObject) {
 
-       // User.currentUser()?.profileImage = nil
+        // User.currentUser()?.profileImage = nil
         if self.genderSelector.selectedSegmentIndex == 0 {
-              User.currentUser()?.gender = "Male"
+            User.currentUser()?.gender = "Male"
         }else{
             User.currentUser()?.gender = "Female"
         }
 
         if self.lgbtFilter.selectedSegmentIndex == 0 {
 
-           User.currentUser()?.lgbtOnly = true
+            User.currentUser()?.lgbtOnly = true
         }else{
             User.currentUser()?.lgbtOnly = false
         }
@@ -91,11 +109,11 @@ class CompleteProfileVC: UIViewController, UIImagePickerControllerDelegate, UINa
             self.profileImage.contentMode = .ScaleAspectFit
             self.profileImage.image = pickedImage
         }
-
+        
         dismissViewControllerAnimated(true, completion: nil)
     }
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-
+    
 }
