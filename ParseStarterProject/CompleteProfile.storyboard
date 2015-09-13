@@ -119,7 +119,7 @@
                     <navigationItem key="navigationItem" id="znM-xC-Z4z">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="pl5-Pz-gjD">
                             <connections>
-                                <action selector="onNextButtonTapped:" destination="YsQ-NI-M3d" id="tVY-1u-0JB"/>
+                                <action selector="onNextButtonTapped:" destination="YsQ-NI-M3d" id="Nd7-Er-5NL"/>
                                 <segue destination="lhp-KX-iKw" kind="show" id="cBk-W8-Rpy"/>
                             </connections>
                         </barButtonItem>

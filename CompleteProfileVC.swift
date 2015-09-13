@@ -27,6 +27,21 @@ class CompleteProfileVC: UIViewController, UIImagePickerControllerDelegate, UINa
     }
 
 
+    @IBAction func onNextButtonTapped(sender: AnyObject) {
+
+       // User.currentUser()?.profileImage = nil
+        if self.genderSelector.selectedSegmentIndex == 0 {
+              User.currentUser()?.gender = "Male"
+        }else{
+            User.currentUser()?.gender = "Female"
+        }
+
+        if self.lgbtFilter.selectedSegmentIndex == 0 {
+
+            
+        }
+
+    }
 
     @IBAction func onChooseProfileImageTapped(sender: UIButton) {
 
