@@ -38,7 +38,7 @@ class SignInVC: UIViewController{
                 // Do stuff after successful login.
 
                 let storyboard = UIStoryboard(name: "Swipe", bundle: nil)
-                let controller = storyboard.instantiateViewControllerWithIdentifier("SwipeVC")
+                let controller = storyboard.instantiateViewControllerWithIdentifier("SwipeNavBarVC")
                 self.presentViewController(controller, animated: true, completion: nil)
 
             } else {

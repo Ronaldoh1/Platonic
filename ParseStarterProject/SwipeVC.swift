@@ -7,29 +7,38 @@
 //
 
 import UIKit
+import Parse
 
 class SwipeVC: UIViewController {
 
+    @IBOutlet weak var userImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+        //we want to download the images and present them to the current user. 
+        //w will make a user query call and download based on constraints.
+
+        let query = User.query()
+
+        query?.whereKey("lgbtOnly", equalTo: (PFUser.currentUser()?["lgbtOnly"]!)!)
+
+
+        query?.findObjectsInBackgroundWithBlock{(objects: [AnyObject]?, error: NSError?) -> Void in
+
+            if error != nil {
+                print(error)
+            }else if let objects = objects as?  [PFObject]{
+                for object in objects{
+                print(objects)
+                }
+
+            }
+
+        }
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

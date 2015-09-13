@@ -8,7 +8,7 @@
         <!--Swipe-->
         <scene sceneID="0XM-6k-nar">
             <objects>
-                <viewController storyboardIdentifier="SwipeVC" title="Swipe" id="Dau-Ag-UaE" customClass="SwipeVC" customModule="Platonic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Swipe" id="Dau-Ag-UaE" customClass="SwipeVC" customModule="Platonic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TKk-Tn-38g"/>
                         <viewControllerLayoutGuide type="bottom" id="E6F-Q9-KIh"/>
@@ -16,13 +16,52 @@
                     <view key="view" contentMode="scaleToFill" id="1a8-Zk-yHh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileTempImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="6AD-KR-thV">
+                                <rect key="frame" x="35" y="95" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="CNg-pY-Kc8"/>
+                                    <constraint firstAttribute="height" constant="250" id="oAA-fG-EyY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.78823529410000004" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6AD-KR-thV" firstAttribute="centerX" secondItem="1a8-Zk-yHh" secondAttribute="centerX" id="I7c-c5-HcH"/>
+                            <constraint firstItem="6AD-KR-thV" firstAttribute="top" secondItem="TKk-Tn-38g" secondAttribute="bottom" constant="31" id="Sue-y4-EdN"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Platonic" id="Mc4-qN-Wox"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="userImage" destination="6AD-KR-thV" id="tKQ-8T-fcD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ag-w4-Gse" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112" y="392"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gaY-vO-MuK">
+            <objects>
+                <navigationController storyboardIdentifier="SwipeNavBarVC" automaticallyAdjustsScrollViewInsets="NO" id="V01-yM-cKW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PRV-bu-5r1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dau-Ag-UaE" kind="relationship" relationship="rootViewController" id="NVB-zd-u0g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OoX-UB-FQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="300" y="392"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="profileTempImage.png" width="1200" height="1200"/>
+    </resources>
 </document>

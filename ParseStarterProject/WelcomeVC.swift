@@ -24,12 +24,40 @@ class WelcomeVC:  UIViewController {
         self.signUpButton.layer.borderWidth = 3.0
 
 
-let urlArray = [""] 
-
-
-
+//        let urlArray = ["http://static.comicvine.com/uploads/original/11111/111113908/3006275-cyclops_dialogue_3.png", "http://cscdn.marvelheroes.com/costume/en/Store_Rogue_Savagelands.png", "http://www.geekoutpost.com/wp-content/uploads/2015/07/storm_feature.jpg", "http://static.comicvine.com/uploads/original/11113/111130700/3535916-8192069448-wolve.jpg"]
+//
+//
+//        let user:PFUser = PFUser()
+//
+//        var counter = 1
+//
+//        for url in urlArray{
+//
+//            let nsurl = NSURL(string: url)
+//
+//            if let data = NSData(contentsOfURL: nsurl!){
+//
+//              //  self.profileImage.image = UIImage(data: data)
+//
+//                let imageFile:PFFile = PFFile(data: data)
+//
+//
+//                user["profileImage"] = imageFile
+//                user["gender"] = "Female"
+//                user["lgbtOnly"] = false
+//                user.username = "user\(counter)"
+//                user.password = "pass"
+//                
+//                counter++
+//                
+//                user.signUp()
+//            }
+//            
+//
+//
+//
+//    }
     }
-
 
 
     @IBAction func onSignInWithFacebookButtonTapped(sender: AnyObject) {
@@ -51,11 +79,29 @@ let urlArray = [""]
                     print("User logged in through Facebook!")
 
                     let storyboard = UIStoryboard(name: "Swipe", bundle: nil)
-                    let controller = storyboard.instantiateViewControllerWithIdentifier("SwipeVC")
+                    let controller = storyboard.instantiateViewControllerWithIdentifier("SwipeNavBarVC")
                     self.presentViewController(controller, animated: true, completion: nil)
                 }
             } else {
                 print("Uh oh. The user cancelled the Facebook login.")
+
+
+                //Create the AlertController
+                let actionSheetController: UIAlertController = UIAlertController(title: "Sign in Cancelled", message: "Uh oh. The user cancelled the Facebook login.", preferredStyle: .Alert)
+
+                //Create and add the Cancel action
+                let cancelAction: UIAlertAction = UIAlertAction(title: "Ok", style: .Cancel) { action -> Void in
+                    //Do some stuff
+
+
+                }
+                actionSheetController.addAction(cancelAction)
+
+
+                
+                //Present the AlertController
+                self.presentViewController(actionSheetController, animated: true, completion: nil)
+
             }
         }
 

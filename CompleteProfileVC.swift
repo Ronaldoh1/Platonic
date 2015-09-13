@@ -23,6 +23,47 @@ class CompleteProfileVC: UIViewController, UIImagePickerControllerDelegate, UINa
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let urlArray = ["http://static.comicvine.com/uploads/original/11111/111113908/3006275-cyclops_dialogue_3.png", "http://cscdn.marvelheroes.com/costume/en/Store_Rogue_Savagelands.png", "http://www.geekoutpost.com/wp-content/uploads/2015/07/storm_feature.jpg", "http://static.comicvine.com/uploads/original/11113/111130700/3535916-8192069448-wolve.jpg"]
+
+
+        let user:PFUser = PFUser()
+
+        var counter = 1
+
+        for url in urlArray{
+
+            let nsurl = NSURL(string: url)
+
+            if let data = NSData(contentsOfURL: nsurl!){
+
+                self.profileImage.image = UIImage(data: data)
+
+                let imageFile:PFFile = PFFile(data: data)
+
+
+                user["profileImage"] = imageFile
+                user["gender"] = "Female"
+                user["lgbtOnly"] = false
+                user["username"] = "user\(counter)"
+
+                counter++
+
+                user.signUp()
+            }
+
+            
+            
+        }
+        
+        
+
+
+
+
+
+
+
+
         // Do any additional setup after loading the view.
         self.imagePicker.delegate = self
 
