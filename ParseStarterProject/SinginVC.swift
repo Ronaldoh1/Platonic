@@ -11,6 +11,7 @@ import UIKit
 import Parse
 import FBSDKCoreKit
 
+
 class SignInVC: UIViewController{
      var inputTextField: UITextField?
 
@@ -26,12 +27,12 @@ class SignInVC: UIViewController{
     @IBAction func onCancelButtonTapped(sender: UIButton) {
 
         self.dismissViewControllerAnimated(true, completion: nil)
-
+        
 
     }
     @IBAction func onSignInButtonTapped(sender: UIButton) {
 
-        PFUser.logInWithUsernameInBackground(self.username.text!, password:self.password.text!) {
+        User.logInWithUsernameInBackground(self.username.text!, password:self.password.text!) {
             (user: PFUser?, error: NSError?) -> Void in
             if user != nil {
                 // Do stuff after successful login.

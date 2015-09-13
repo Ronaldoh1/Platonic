@@ -9,6 +9,14 @@
 import UIKit
 
 class CompleteProfileVC: UIViewController {
+    @IBOutlet weak var profileImage: UIImageView!
+
+    @IBOutlet weak var genderSelector: UISegmentedControl!
+    @IBOutlet weak var lgbtFilter: UISegmentedControl!
+    @IBOutlet weak var schoolTextField: UITextField!
+    @IBOutlet weak var jobTextField: UITextField!
+    @IBOutlet weak var presonalityTextField: UITextField!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,20 +24,12 @@ class CompleteProfileVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func onChooseProfileImageTapped(sender: UIButton) {
+
+
+
     }
-    */
 
 }

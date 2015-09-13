@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Complete Profile-->
+        <!--Complete ProfileVC-->
         <scene sceneID="ozL-iK-K2F">
             <objects>
-                <viewController id="YsQ-NI-M3d" customClass="CompleteProfile" customModule="Platonic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YsQ-NI-M3d" customClass="CompleteProfileVC" customModule="Platonic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B08-43-Z5l"/>
                         <viewControllerLayoutGuide type="bottom" id="Kms-cQ-1XX"/>
@@ -32,6 +32,9 @@
                                     <constraint firstAttribute="height" constant="30" id="twy-ne-0UG"/>
                                 </constraints>
                                 <state key="normal" title="Choose image"/>
+                                <connections>
+                                    <action selector="onChooseProfileImageTapped:" destination="YsQ-NI-M3d" eventType="touchUpInside" id="Yrp-sS-Wnu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am interested in making LGBT Friends only" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGB-eH-o43">
                                 <rect key="frame" x="-8" y="296" width="336" height="21"/>
@@ -122,6 +125,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="genderSelector" destination="bDd-CT-DbO" id="8Br-PD-8YH"/>
+                        <outlet property="jobTextField" destination="P92-dF-EZa" id="7hF-wF-XEI"/>
+                        <outlet property="lgbtFilter" destination="mHO-Z9-w07" id="0cE-a9-1cA"/>
+                        <outlet property="presonalityTextField" destination="38c-dE-dL0" id="PCo-m0-PwH"/>
+                        <outlet property="profileImage" destination="1d0-53-XxT" id="FBe-kY-6XI"/>
+                        <outlet property="schoolTextField" destination="VV9-ba-qTJ" id="vkR-In-HvO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojX-70-5i2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -171,7 +182,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="interestVC" destination="laF-zn-kBf" id="PTv-pb-Vh7"/>
+                        <outlet property="aboutTextView" destination="laF-zn-kBf" id="HBB-FI-Xn1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aeo-Oq-8mm" userLabel="First Responder" sceneMemberID="firstResponder"/>

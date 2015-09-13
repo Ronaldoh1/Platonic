@@ -44,6 +44,7 @@
 		F23C737D1BA3A2D100B114FE /* InterestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C737C1BA3A2D100B114FE /* InterestVC.swift */; settings = {ASSET_TAGS = (); }; };
 		F23C737F1BA3A61D00B114FE /* CompleteProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C737E1BA3A61D00B114FE /* CompleteProfileVC.swift */; settings = {ASSET_TAGS = (); }; };
 		F23C73811BA3B5FE00B114FE /* MailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C73801BA3B5FE00B114FE /* MailTVC.swift */; settings = {ASSET_TAGS = (); }; };
+		F23C73841BA3B7EF00B114FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C73831BA3B7EF00B114FE /* User.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		F23C737C1BA3A2D100B114FE /* InterestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestVC.swift; sourceTree = "<group>"; };
 		F23C737E1BA3A61D00B114FE /* CompleteProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompleteProfileVC.swift; path = ../CompleteProfileVC.swift; sourceTree = "<group>"; };
 		F23C73801BA3B5FE00B114FE /* MailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailTVC.swift; sourceTree = "<group>"; };
+		F23C73831BA3B7EF00B114FE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		81BA81471A49DA1800E65899 /* Platonic */ = {
 			isa = PBXGroup;
 			children = (
+				F23C73821BA3B7D300B114FE /* Data */,
 				F23C73771BA3754400B114FE /* Terms And Conditions */,
 				F23C73721BA372FF00B114FE /* Complete Profile */,
 				F2368FAD1BA0762C004F6492 /* Mail */,
@@ -270,6 +273,14 @@
 			name = "Terms And Conditions";
 			sourceTree = "<group>";
 		};
+		F23C73821BA3B7D300B114FE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F23C73831BA3B7EF00B114FE /* User.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -379,6 +390,7 @@
 				F23C736C1BA1C0D800B114FE /* WelcomeVC.swift in Sources */,
 				F23C736D1BA1C0D800B114FE /* SinginVC.swift in Sources */,
 				F23C73811BA3B5FE00B114FE /* MailTVC.swift in Sources */,
+				F23C73841BA3B7EF00B114FE /* User.swift in Sources */,
 				F23C736E1BA1C0D800B114FE /* AppDelegate.swift in Sources */,
 				F23C737B1BA3758600B114FE /* TermsAndConditionsVC.swift in Sources */,
 				F23C736F1BA1C0D800B114FE /* ViewController.swift in Sources */,

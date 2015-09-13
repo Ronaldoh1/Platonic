@@ -9,5 +9,7 @@
 
 #import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <Parse/Parse.h>
+#import <Parse/PFObject+Subclass.h>
 
 #endif
