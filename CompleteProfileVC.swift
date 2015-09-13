@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class CompleteProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var profileImage: UIImageView!
@@ -24,6 +25,28 @@ class CompleteProfileVC: UIViewController, UIImagePickerControllerDelegate, UINa
 
         // Do any additional setup after loading the view.
         self.imagePicker.delegate = self
+
+        //getting information from a user from facebook is called a GRAPH Request 
+
+        let graphRequest: FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, gender"])
+
+        graphRequest.startWithCompletionHandler {
+
+            (connection, result, error) -> Void in
+
+            //do simple check 
+
+            if error != nil {
+                print(error)
+            } else if let result = result {
+
+                User.currentUser()?["name"] = result["name"]
+                User.currentUser()?.save()
+
+            
+            }
+        }
+
     }
 
 
@@ -38,8 +61,16 @@ class CompleteProfileVC: UIViewController, UIImagePickerControllerDelegate, UINa
 
         if self.lgbtFilter.selectedSegmentIndex == 0 {
 
-            
+           User.currentUser()?.lgbtOnly = true
+        }else{
+            User.currentUser()?.lgbtOnly = false
         }
+
+        User.currentUser()?.school = self.schoolTextField.text!
+        User.currentUser()?.job = self.jobTextField.text!
+
+
+
 
     }
 

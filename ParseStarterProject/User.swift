@@ -17,11 +17,13 @@ class User : PFUser  {
     @NSManaged var personality: String
     @NSManaged var about : String
     @NSManaged var gender : String
-    @NSManaged var lgbtFriendsOnly : Bool
+    @NSManaged var lgbtOnly: Bool
+    @NSManaged var name : String
+    
 
 
 
-
+    
     override class func initialize() {
         struct Static {
             static var onceToken : dispatch_once_t = 0;

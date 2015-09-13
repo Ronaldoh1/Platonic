@@ -34,6 +34,29 @@ class WelcomeVC:  UIViewController {
     @IBAction func onSignInWithFacebookButtonTapped(sender: AnyObject) {
 
 
+        let permissions = ["public_profile", "email"]
+
+        PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions) {
+            (user: PFUser?, error: NSError?) -> Void in
+            if let user = user {
+                if user.isNew {
+                    print("User signed up and logged in through Facebook!")
+
+                    let storyboard = UIStoryboard(name: "CompleteProfile", bundle: nil)
+                    let controller = storyboard.instantiateViewControllerWithIdentifier("completeProfileVC")
+                    self.presentViewController(controller, animated: true, completion: nil)
+                    
+                } else {
+                    print("User logged in through Facebook!")
+
+                    let storyboard = UIStoryboard(name: "Swipe", bundle: nil)
+                    let controller = storyboard.instantiateViewControllerWithIdentifier("SwipeVC")
+                    self.presentViewController(controller, animated: true, completion: nil)
+                }
+            } else {
+                print("Uh oh. The user cancelled the Facebook login.")
+            }
+        }
 
 
 
