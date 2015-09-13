@@ -24,12 +24,13 @@ class WelcomeVC:  UIViewController {
         self.signUpButton.layer.borderWidth = 3.0
 
 
+let urlArray = [""] 
+
+
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
 
     @IBAction func onSignInWithFacebookButtonTapped(sender: AnyObject) {
 

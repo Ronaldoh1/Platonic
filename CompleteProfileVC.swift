@@ -72,23 +72,24 @@ class CompleteProfileVC: UIViewController, UIImagePickerControllerDelegate, UINa
 
         // User.currentUser()?.profileImage = nil
         if self.genderSelector.selectedSegmentIndex == 0 {
-            User.currentUser()?.gender = "Male"
+            User.currentUser()?["gender"] = "Male"
         }else{
-            User.currentUser()?.gender = "Female"
+            User.currentUser()?["gender"] = "Female"
         }
 
         if self.lgbtFilter.selectedSegmentIndex == 0 {
 
-            User.currentUser()?.lgbtOnly = true
+            User.currentUser()?["lgbtOnly"] = true
         }else{
-            User.currentUser()?.lgbtOnly = false
+            User.currentUser()?["lgbtOnly"] = false
         }
 
-        User.currentUser()?.school = self.schoolTextField.text!
-        User.currentUser()?.job = self.jobTextField.text!
+        User.currentUser()?["school"] = self.schoolTextField.text!
+        User.currentUser()?["job"] = self.jobTextField.text!
+        User.currentUser()?["personality"] = self.presonalityTextField.text!
 
 
-
+        User.currentUser()?.save()
 
     }
 
