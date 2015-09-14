@@ -145,6 +145,7 @@ class SwipeVC: UIViewController {
 
         query?.whereKey("objectId", notContainedIn: ignoreUsers)
 
+        query?.limit = 1 
 
         query?.findObjectsInBackgroundWithBlock{(objects: [AnyObject]?, error: NSError?) -> Void in
 
