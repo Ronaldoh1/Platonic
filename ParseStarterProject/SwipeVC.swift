@@ -31,7 +31,14 @@ class SwipeVC: UIViewController {
                 print(error)
             }else if let objects = objects as?  [PFObject]{
                 for object in objects{
-                print(objects)
+
+                    let imageFile = object["profileImage"] as! PFFile
+
+                    imageFile.getDataInBackgroundWithBlock({ (data: NSData?, error: NSError?) -> Void in
+
+                    })
+
+
                 }
 
             }
