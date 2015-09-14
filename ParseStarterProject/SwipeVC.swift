@@ -26,6 +26,17 @@ class SwipeVC: UIViewController {
         self.userImage.addGestureRecognizer(gesture)
         self.userImage.userInteractionEnabled = true
 
+        //get the geopoint for the current user. We need a pfgeopoint to store the user's location. 
+        PFGeoPoint.geoPointForCurrentLocationInBackground { (geoPoint: PFGeoPoint?, error: NSError?) -> Void in
+
+            if let geoPoint = geoPoint{
+
+                PFUser.currentUser()?["Location"] = geoPoint
+                PFUser.currentUser()?.save()
+            }
+
+        }
+
         self.updateImage()
 
             }
@@ -120,6 +131,19 @@ class SwipeVC: UIViewController {
 
         query?.whereKey("lgbtOnly", equalTo: (PFUser.currentUser()?["lgbtOnly"]!)!)
 
+        if let latitude = PFUser.currentUser()?["location"]?.latitude{
+
+            if let longitude = PFUser.currentUser()?["location"]?.longitude{
+
+
+                //restrict the query so that we only get users who are nearby
+                query?.whereKey("location", withinGeoBoxFromSouthwest: PFGeoPoint(latitude: latitude - 1, longitude: longitude - 1), toNortheast: PFGeoPoint(latitude: latitude + 1, longitude: longitude + 1))
+                
+
+
+            }
+        }
+
         //need to check that the user has not been accepted or rejected.
 
 
@@ -145,7 +169,7 @@ class SwipeVC: UIViewController {
 
         query?.whereKey("objectId", notContainedIn: ignoreUsers)
 
-        query?.limit = 1 
+        query?.limit = 1
 
         query?.findObjectsInBackgroundWithBlock{(objects: [AnyObject]?, error: NSError?) -> Void in
 

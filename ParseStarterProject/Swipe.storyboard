@@ -31,7 +31,12 @@
                             <constraint firstItem="6AD-KR-thV" firstAttribute="top" secondItem="TKk-Tn-38g" secondAttribute="bottom" constant="31" id="Sue-y4-EdN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Platonic" id="Mc4-qN-Wox"/>
+                    <navigationItem key="navigationItem" title="Platonic" id="Mc4-qN-Wox">
+                        <barButtonItem key="rightBarButtonItem" image="inboxButton.png" id="P1m-yJ-q3t">
+                            <inset key="imageInsets" minX="13" minY="10" maxX="6" maxY="5"/>
+                            <color key="tintColor" name="knobColor" catalog="System" colorSpace="catalog"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="userImage" destination="6AD-KR-thV" id="tKQ-8T-fcD"/>
@@ -62,6 +67,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="inboxButton.png" width="60" height="50"/>
         <image name="profileTempImage.png" width="1200" height="1200"/>
     </resources>
 </document>
