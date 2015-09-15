@@ -120,6 +120,14 @@ class SwipeVC: UIViewController {
         print(translation);
     }
 
+    @IBAction func onContactsButtonTapped(sender: UIBarButtonItem) {
+
+        let storyboard = UIStoryboard(name: "Chat", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("ChatNavVC")
+
+        self.presentViewController(controller, animated: true, completion: nil)
+
+    }
     func updateImage(){
 
         // Do any additional setup after loading the view.

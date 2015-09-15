@@ -31,6 +31,8 @@
 		F21EF0AF1BA7013A005575B5 /* defaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F21EF0AB1BA7013A005575B5 /* defaultImage.png */; settings = {ASSET_TAGS = (); }; };
 		F21EF0B01BA7013A005575B5 /* grey_2.png in Resources */ = {isa = PBXBuildFile; fileRef = F21EF0AC1BA7013A005575B5 /* grey_2.png */; settings = {ASSET_TAGS = (); }; };
 		F21EF0B21BA702A7005575B5 /* inboxButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F21EF0B11BA702A7005575B5 /* inboxButton.png */; settings = {ASSET_TAGS = (); }; };
+		F21EF0B51BA79B2B005575B5 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21EF0B41BA79B2B005575B5 /* Chat.storyboard */; settings = {ASSET_TAGS = (); }; };
+		F21EF0B71BA79DDD005575B5 /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21EF0B61BA79DDD005575B5 /* ContactsVC.swift */; settings = {ASSET_TAGS = (); }; };
 		F2368F981BA06BCB004F6492 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368F971BA06BCB004F6492 /* SignIn.storyboard */; settings = {ASSET_TAGS = (); }; };
 		F2368F9C1BA0710F004F6492 /* Swipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368F9B1BA0710F004F6492 /* Swipe.storyboard */; settings = {ASSET_TAGS = (); }; };
 		F2368F9E1BA07129004F6492 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368F9D1BA07129004F6492 /* Welcome.storyboard */; settings = {ASSET_TAGS = (); }; };
@@ -90,6 +92,8 @@
 		F21EF0AB1BA7013A005575B5 /* defaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultImage.png; sourceTree = SOURCE_ROOT; };
 		F21EF0AC1BA7013A005575B5 /* grey_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey_2.png; sourceTree = SOURCE_ROOT; };
 		F21EF0B11BA702A7005575B5 /* inboxButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inboxButton.png; sourceTree = SOURCE_ROOT; };
+		F21EF0B41BA79B2B005575B5 /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		F21EF0B61BA79DDD005575B5 /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
 		F2368F971BA06BCB004F6492 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		F2368F9B1BA0710F004F6492 /* Swipe.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Swipe.storyboard; sourceTree = "<group>"; };
 		F2368F9D1BA07129004F6492 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
@@ -155,8 +159,8 @@
 		81BA81471A49DA1800E65899 /* Platonic */ = {
 			isa = PBXGroup;
 			children = (
+				F21EF0B31BA79A3F005575B5 /* Contact */,
 				F23C73821BA3B7D300B114FE /* Data */,
-				F21EF09A1BA6FFF6005575B5 /* Mail */,
 				F23C73771BA3754400B114FE /* Terms And Conditions */,
 				F23C73721BA372FF00B114FE /* Complete Profile */,
 				F2368FAD1BA0762C004F6492 /* Mail */,
@@ -211,11 +215,13 @@
 			name = "System Frameworks";
 			sourceTree = "<group>";
 		};
-		F21EF09A1BA6FFF6005575B5 /* Mail */ = {
+		F21EF0B31BA79A3F005575B5 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				F21EF0B41BA79B2B005575B5 /* Chat.storyboard */,
+				F21EF0B61BA79DDD005575B5 /* ContactsVC.swift */,
 			);
-			name = Mail;
+			name = Contact;
 			sourceTree = "<group>";
 		};
 		F2368F951BA06B67004F6492 /* SignIn */ = {
@@ -395,6 +401,7 @@
 				81BA81501A49DA1800E65899 /* Main.storyboard in Resources */,
 				F21EF0AF1BA7013A005575B5 /* defaultImage.png in Resources */,
 				F21EF09C1BA7006F005575B5 /* Mail.storyboard in Resources */,
+				F21EF0B51BA79B2B005575B5 /* Chat.storyboard in Resources */,
 				F2368FBB1BA0EEDB004F6492 /* PlatonicLogo.png in Resources */,
 				F2368FA81BA074B2004F6492 /* facebookLoginButton.png in Resources */,
 				F2368FA31BA07228004F6492 /* Profile.storyboard in Resources */,
@@ -434,6 +441,7 @@
 				F21EF0A61BA7008A005575B5 /* InboxSearchResultTVC.m in Sources */,
 				F23C737F1BA3A61D00B114FE /* CompleteProfileVC.swift in Sources */,
 				F23C737D1BA3A2D100B114FE /* InterestVC.swift in Sources */,
+				F21EF0B71BA79DDD005575B5 /* ContactsVC.swift in Sources */,
 				F23C73711BA3726400B114FE /* SwipeVC.swift in Sources */,
 				F21EF0A51BA7008A005575B5 /* InboxCustomCell.m in Sources */,
 				F21EF0A71BA7008A005575B5 /* InboxVC.m in Sources */,

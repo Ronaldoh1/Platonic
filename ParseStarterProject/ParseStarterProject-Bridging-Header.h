@@ -11,5 +11,9 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <Parse/Parse.h>
 #import <Parse/PFObject+Subclass.h>
+#import "inboxCustomCell.h"
+#import "inboxSearchResultTVC.h"
+#import "inboxVC.h"
+#import "DialogVC.h"
 
 #endif

@@ -8,14 +8,14 @@
 
 #import "InboxVC.h"
 #import <Parse/Parse.h>
-#import "User.h"
+//#import "User.h"
 #import "DialogVC.h"
-#import "AppDelegate.h"
-#import "Message.h"
+//#import "AppDelegate.h"
+//#import "Message.h"
 #import "InboxCustomCell.h"
-#import "Inbox.h"
+//#import "Inbox.h"
 #import "InboxSearchResultTVC.h"
-#import "Alert.h"
+//#import "Alert.h"
 
 
 @interface InboxVC ()<UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating>
@@ -50,7 +50,8 @@
 
 
     [self initialSetUp];
-    [self downloadNewAlerts];
+    [self downloadContactsForUser];
+//    [self downloadNewAlerts];
 }
 -(void)initialSetUp{
     //setting image to Navigation Bar's title
@@ -64,8 +65,8 @@
 
     //initialize the inboxArray
     self.inboxArray = [NSMutableArray new];
-
-    [self downloadInboxForCurrentUser];
+//
+//    [self downloadInboxForCurrentUser];
 
     //    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     //    BOOL tmpBool = *(appDelegate.hideDoneButtonForMessages);
@@ -103,7 +104,7 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:YES];
 
-    [self downloadInboxForCurrentUser];
+//    [self downloadInboxForCurrentUser];
 }
 - (IBAction)onDoneButtonDone:(UIBarButtonItem *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -120,28 +121,28 @@
 
 
     InboxCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"fromCell"];
-    User *sender = (User *)(self.inboxArray[indexPath.row]);
-    [sender fetchIfNeededInBackground];
-    // Message *message = ((Message *)(self.inboxArray[indexPath.row]));
-    cell.senderNameLabel.text = sender.name;
-
-    [sender.profileImage getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
-        if (!error) {
-            UIImage *image = [UIImage imageWithData:data];
-            cell.userProfileImage.image = image;
-        }
-
-    }];
-
-    for (Alert *alert in self.alertArray) {
-
-
-        if ([sender.username isEqualToString:alert.senderUsername] && [alert.messageIsNew isEqualToNumber:@1]) {
-
-            cell.blueDot.alpha = 1.0;
-        }
-        
-    }
+//    User *sender = (User *)(self.inboxArray[indexPath.row]);
+//    [sender fetchIfNeededInBackground];
+//    // Message *message = ((Message *)(self.inboxArray[indexPath.row]));
+//    cell.senderNameLabel.text = sender.name;
+//
+//    [sender.profileImage getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+//        if (!error) {
+//            UIImage *image = [UIImage imageWithData:data];
+//            cell.userProfileImage.image = image;
+//        }
+//
+//    }];
+//
+//    for (Alert *alert in self.alertArray) {
+//
+//
+//        if ([sender.username isEqualToString:alert.senderUsername] && [alert.messageIsNew isEqualToNumber:@1]) {
+//
+//            cell.blueDot.alpha = 1.0;
+//        }
+//        
+//    }
 
     //cell.detailTextLabel.text = @"You got a Message";
     return cell;
@@ -155,22 +156,22 @@
     //need to remove the blue dot from the cell.
     ((InboxCustomCell *)[self.tableView cellForRowAtIndexPath:indexPath]).blueDot.alpha = 0;
     //we need to mark our alerts as read.
-
-
-    User *sender = [User new];
-    sender = (User *)self.inboxArray[indexPath.row];
-    
-    for (Alert *alert in self.alertArray) {
-
-
-        if ([sender.username isEqualToString:alert.senderUsername] && [alert.messageIsNew isEqualToNumber:@1]) {
-
-            alert.messageIsNew = @0;
-            [alert saveInBackground];
-
-        }
-
-    }
+//
+//
+//    User *sender = [User new];
+//    sender = (User *)self.inboxArray[indexPath.row];
+//    
+//    for (Alert *alert in self.alertArray) {
+//
+//
+//        if ([sender.username isEqualToString:alert.senderUsername] && [alert.messageIsNew isEqualToNumber:@1]) {
+//
+//            alert.messageIsNew = @0;
+//            [alert saveInBackground];
+//
+//        }
+//
+//    }
 
 
 
@@ -179,8 +180,8 @@
     UIViewController *detailVC = [detailStoryboard instantiateViewControllerWithIdentifier:@"navVC"];
 
     //set the activity that is goign to be shared through out the app - to dispay to the user when the user clicks on detail.
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    appDelegate.selectedRecepient = (User *) self.inboxArray[indexPath.row];
+//    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+//    appDelegate.selectedRecepient = (User *) self.inboxArray[indexPath.row];
 
     [self presentViewController:detailVC animated:YES completion:nil];
 }
@@ -192,7 +193,7 @@
     if ([segue.identifier isEqualToString:@"OpenDialogSegue"]) {
         self.activeDialogVC = segue.destinationViewController;
         NSInteger chatMateIndex = [[self.tableView indexPathForCell:(UITableViewCell *)sender] row];
-        self.activeDialogVC.selectedRecipient = (User *)self.inboxArray[chatMateIndex];
+//        self.activeDialogVC.selectedRecipient = (User *)self.inboxArray[chatMateIndex];
 
         self.searchController.active = NO;
 
@@ -241,15 +242,15 @@
 
         //here we want to make sure that we return the activities that contain the string for non-case sensitive strings.
 
-        for (User *user in self.inboxArray){
-            NSRange NameRange = [user.name rangeOfString:searchStr options:NSCaseInsensitiveSearch];
-            //            NSRange descriptionRange = [activity.activityDescription rangeOfString:searchStr options:NSCaseInsensitiveSearch];
-            //
-            if (NameRange.location != NSNotFound) {
-
-                [searchResults addObject:user];
-            }
-        }
+//        for (User *user in self.inboxArray){
+//            NSRange NameRange = [user.name rangeOfString:searchStr options:NSCaseInsensitiveSearch];
+//            //            NSRange descriptionRange = [activity.activityDescription rangeOfString:searchStr options:NSCaseInsensitiveSearch];
+//            //
+//            if (NameRange.location != NSNotFound) {
+//
+//                [searchResults addObject:user];
+//            }
+//        }
 
         self.searchResults = searchResults;
 
@@ -259,79 +260,102 @@
 #pragma mark - Helper methods
 //This helper method allows us retrieve an array which contains the messages that have been sent the current user. Query the database where the recepient is the current user and then iterate through each object found and add message object and sender pointer to the inboxArray if and only if it has not been previously added.
 
--(void)downloadInboxForCurrentUser{
-    NSMutableArray *array = [NSMutableArray new];
+-(void)downloadContactsForUser{
 
+    PFQuery *query = [PFQuery queryWithClassName:@"User"];
 
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat: @"(messageContactUsername = '%@') OR (inboxOwnerUsername = '%@')", [User currentUser].username, [User currentUser].username]];
+    //need to check if the users exist in chosen array.
+    [query whereKey:@"chosenArray" equalTo:[PFUser currentUser].objectId];
 
+    [query whereKey:@"objectId" containedIn:[PFUser currentUser][@"chosenArray"]];
 
-
-    PFQuery *query = [PFQuery queryWithClassName:@"Inbox" predicate:predicate];
-
-    //[query orderByAscending:@"updatedAt"];
-
-    //
-    //    PFQuery *query = [PFQuery queryWithClassName:@"Inbox"];
-    //    [query whereKey:@"inboxOwner" equalTo:[User currentUser]];
-    //    [query whereKey:@"messageContact" equalTo:[User currentUser]];
-    [query includeKey:@"messageContact"];
-    [query includeKey:@"inboxOwner"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
 
 
         if (!error) {
-            for (Inbox *contact in objects) {
+            NSLog(@"%@ errorrrr", error.description);
 
-
-
-                if (![array containsObject:contact.messageContact] && contact.messageContact != [User currentUser])  {
-                    [array addObject:contact.messageContact];
-
-                }else if (![array containsObject:contact.inboxOwner]  && contact.inboxOwner != [User currentUser]){
-
-                    [array addObject:contact.inboxOwner];
-                }
-            }
-
-
-            self.inboxArray = [NSMutableArray arrayWithArray:array];
-            [self.tableView reloadData];
+        }else{
+            NSLog(@"%@", objects);
 
         }
 
     }];
 }
 
--(void)downloadNewAlerts{
-    NSMutableArray *array = [NSMutableArray new];
-
-
-
-
-    PFQuery *query = [Alert query];
-    
-    [query whereKey:@"recipientUsername" equalTo:[User currentUser].username];
-    
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
-        
-        
-        if (!error) {
-            for (Alert *alert in objects) {
-                
-                
-                
-                if (![array containsObject:alert.senderUsername] )  {
-                    [array addObject:alert];
-                    
-                }
-            }
-            
-            self.alertArray = [NSMutableArray arrayWithArray:array];
-            [self.tableView reloadData];
-            
-        }
-        
-    }];
-}
+//-(void)downloadInboxForCurrentUser{
+//    NSMutableArray *array = [NSMutableArray new];
+//
+//
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat: @"(messageContactUsername = '%@') OR (inboxOwnerUsername = '%@')", [User currentUser].username, [User currentUser].username]];
+//
+//
+//
+//    PFQuery *query = [PFQuery queryWithClassName:@"Inbox" predicate:predicate];
+//
+//    //[query orderByAscending:@"updatedAt"];
+//
+//    //
+//    //    PFQuery *query = [PFQuery queryWithClassName:@"Inbox"];
+//    //    [query whereKey:@"inboxOwner" equalTo:[User currentUser]];
+//    //    [query whereKey:@"messageContact" equalTo:[User currentUser]];
+//    [query includeKey:@"messageContact"];
+//    [query includeKey:@"inboxOwner"];
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
+//
+////
+////        if (!error) {
+////            for (Inbox *contact in objects) {
+////
+////
+////
+////                if (![array containsObject:contact.messageContact] && contact.messageContact != [User currentUser])  {
+////                    [array addObject:contact.messageContact];
+////
+////                }else if (![array containsObject:contact.inboxOwner]  && contact.inboxOwner != [User currentUser]){
+////
+////                    [array addObject:contact.inboxOwner];
+////                }
+////            }
+//
+//
+//            self.inboxArray = [NSMutableArray arrayWithArray:array];
+//            [self.tableView reloadData];
+//
+//        }
+//
+//    }];
+//}
+//
+//-(void)downloadNewAlerts{
+//    NSMutableArray *array = [NSMutableArray new];
+//
+//
+//
+//
+//    PFQuery *query = [Alert query];
+//    
+//    [query whereKey:@"recipientUsername" equalTo:[User currentUser].username];
+//    
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
+//        
+//        
+//        if (!error) {
+//            for (Alert *alert in objects) {
+//                
+//                
+//                
+//                if (![array containsObject:alert.senderUsername] )  {
+//                    [array addObject:alert];
+//                    
+//                }
+//            }
+//            
+//            self.alertArray = [NSMutableArray arrayWithArray:array];
+//            [self.tableView reloadData];
+//            
+//        }
+//        
+//    }];
+//}
 @end

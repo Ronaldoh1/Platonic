@@ -57,6 +57,24 @@ class WelcomeVC:  UIViewController {
 //
 //
 //    }
+
+
+
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+
+        let currentUser = PFUser.currentUser()
+        if currentUser != nil {
+            // Do stuff with the user
+            let storyboard = UIStoryboard(name: "Swipe", bundle: nil)
+            let controller = storyboard.instantiateViewControllerWithIdentifier("SwipeNavBarVC")
+            self.presentViewController(controller, animated: true, completion: nil)
+
+        } else {
+            // Show the signup or login screen
+        }
     }
 
 
