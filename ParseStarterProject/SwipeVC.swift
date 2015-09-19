@@ -32,18 +32,28 @@ class SwipeVC: UIViewController {
             if let geoPoint = geoPoint{
 
                 PFUser.currentUser()?["Location"] = geoPoint
-                PFUser.currentUser()?.save()
+                PFUser.currentUser()?.saveInBackground()
             }
 
         }
 
-        //self.updateImage()
+        self.updateImage()
 
             }
 
     @IBAction func logOut(sender: UIBarButtonItem) {
 
-        PFUser.logOut()
+         PFUser.logOutInBackgroundWithBlock() { (error: NSError?) -> Void in
+            if error != nil {
+                print("logout fail")
+                print(error)
+            } else {
+                print("logout success")
+
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
+        }
+
 
 
     }
@@ -105,7 +115,7 @@ class SwipeVC: UIViewController {
             if acceptedOrRejected != ""{
 
             PFUser.currentUser()?.addUniqueObjectsFromArray([self.displayedUserID], forKey:acceptedOrRejected)
-                PFUser.currentUser()?.save()
+                PFUser.currentUser()?.saveInBackground()
 
             }
 
@@ -186,6 +196,8 @@ class SwipeVC: UIViewController {
 
         query?.limit = 1
 
+
+
         query?.findObjectsInBackgroundWithBlock{(objects: [AnyObject]?, error: NSError?) -> Void in
 
             if error != nil {
@@ -197,15 +209,20 @@ class SwipeVC: UIViewController {
 
                     let imageFile = object["profileImage"] as! PFFile
 
+                    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+
                     imageFile.getDataInBackgroundWithBlock({ (data: NSData?, error: NSError?) -> Void in
 
                         if error != nil {
                             print(error)
                         }else{
+                            dispatch_async(dispatch_get_main_queue()) { // 2
 
                             self.userImage.image = UIImage(data: data!)
+                            }
                         }
                         
+                    })
                     })
                     
                     

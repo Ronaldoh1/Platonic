@@ -7,17 +7,16 @@
 //
 
 import UIKit
+import Parse
 
 class ContactsVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+     self.downloadContacts()
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,6 +48,25 @@ class ContactsVC: UITableViewController {
         return cell
     }
 
+    //Helper methods
+
+    func downloadContacts(){
+
+        let query = User.query()
+        //Check if they have accepted us
+        query?.whereKey("chosenArray", equalTo: (PFUser.currentUser()?.objectId)!)
+
+        //check if we have accepted them. Where their objectId is contained in our "chosenArray
+
+        query?.whereKey("objectId", containedIn: PFUser.currentUser()?["chosenArray"] as! [String])
+
+        query?.findObjectsInBackgroundWithBlock({ (results, error) -> Void in
+          print(results)
+        })
+
+
+
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

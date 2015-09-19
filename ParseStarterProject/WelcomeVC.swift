@@ -14,8 +14,13 @@ class WelcomeVC:  UIViewController {
 
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
+
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
         // Do any additional setup after loading the view, typically from a nib.
         self.signInButton.layer.borderColor = UIColor.whiteColor().CGColor
         self.signInButton.layer.borderWidth = 3.0
@@ -66,20 +71,18 @@ class WelcomeVC:  UIViewController {
         super.viewDidAppear(true)
 
 
-
-        let currentUser = PFUser.currentUser()
-
+       let currentUser = PFUser.currentUser()?.username
 
 
-//        if currentUser != nil {
-//            // Do stuff with the user
-//            let storyboard = UIStoryboard(name: "Swipe", bundle: nil)
-//            let controller = storyboard.instantiateViewControllerWithIdentifier("SwipeNavBarVC")
-//            self.presentViewController(controller, animated: true, completion: nil)
-//
-//        } else {
-//            // Show the signup or login screen
-//        }
+
+
+        if currentUser != nil {
+            // Do stuff with the user
+            let storyboard = UIStoryboard(name: "Swipe", bundle: nil)
+            let controller = storyboard.instantiateViewControllerWithIdentifier("SwipeNavBarVC")
+            self.presentViewController(controller, animated: true, completion: nil)
+
+        }
     }
 
 

@@ -71,9 +71,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e8-xH-tWs">
-                                <rect key="frame" x="-8" y="390" width="336" height="56"/>
+                                <rect key="frame" x="-4" y="390" width="328" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="iYR-xb-ORp"/>
+                                    <constraint firstAttribute="height" constant="60" id="iYR-xb-ORp"/>
                                 </constraints>
                                 <state key="normal" image="facebookLoginButton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -90,16 +90,16 @@
                             <constraint firstItem="UwA-cv-eUx" firstAttribute="top" secondItem="ruu-aF-p3r" secondAttribute="bottom" constant="187" id="49W-j1-nRu"/>
                             <constraint firstAttribute="centerX" secondItem="1xh-tj-uqK" secondAttribute="centerX" id="AS0-R7-aZm"/>
                             <constraint firstAttribute="centerY" secondItem="IBN-Q2-ZB5" secondAttribute="centerY" constant="-116" id="EUT-Kd-3PF"/>
-                            <constraint firstItem="6e8-xH-tWs" firstAttribute="centerY" secondItem="sP3-6a-8hB" secondAttribute="centerY" constant="178" id="FQ0-4c-5Qx"/>
+                            <constraint firstItem="6e8-xH-tWs" firstAttribute="centerY" secondItem="sP3-6a-8hB" secondAttribute="centerY" constant="180" id="FQ0-4c-5Qx"/>
                             <constraint firstAttribute="centerX" secondItem="Cyy-0g-ygJ" secondAttribute="centerX" id="L6G-Sv-ujd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6e8-xH-tWs" secondAttribute="trailing" constant="-24" id="O0R-HO-gM3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6e8-xH-tWs" secondAttribute="trailing" constant="-20" id="O0R-HO-gM3"/>
                             <constraint firstAttribute="centerY" secondItem="o3e-hN-1po" secondAttribute="centerY" constant="-116" id="Oih-BS-4WH"/>
                             <constraint firstItem="ruu-aF-p3r" firstAttribute="top" secondItem="sP3-6a-8hB" secondAttribute="topMargin" constant="64" id="Pd2-np-gi3"/>
                             <constraint firstItem="o3e-hN-1po" firstAttribute="leading" secondItem="1xh-tj-uqK" secondAttribute="trailing" constant="2" id="Qik-42-d5X"/>
                             <constraint firstItem="ruu-aF-p3r" firstAttribute="leading" secondItem="sP3-6a-8hB" secondAttribute="leadingMargin" constant="-16" id="WuB-qL-jel"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ruu-aF-p3r" secondAttribute="trailing" constant="-16" id="b44-IJ-fUb"/>
                             <constraint firstAttribute="centerY" secondItem="Cyy-0g-ygJ" secondAttribute="centerY" constant="-183.5" id="bw3-0N-0ST"/>
-                            <constraint firstItem="6e8-xH-tWs" firstAttribute="leading" secondItem="sP3-6a-8hB" secondAttribute="leadingMargin" constant="-24" id="dmS-vX-0te"/>
+                            <constraint firstItem="6e8-xH-tWs" firstAttribute="leading" secondItem="sP3-6a-8hB" secondAttribute="leadingMargin" constant="-20" id="dmS-vX-0te"/>
                             <constraint firstAttribute="centerY" secondItem="1xh-tj-uqK" secondAttribute="centerY" constant="-98.5" id="ehs-ID-OBZ"/>
                         </constraints>
                     </view>
