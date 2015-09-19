@@ -10,9 +10,12 @@ import UIKit
 import Parse
 
 class ContactsVC: UITableViewController {
+    var contactsArray = [String]()
+    var userImagesArray = [UIImage]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
 
      self.downloadContacts()
 
@@ -37,13 +40,21 @@ class ContactsVC: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return self.contactsArray.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
 
-         cell.textLabel?.text = "Users"
+        cell.textLabel?.text = self.contactsArray[indexPath.row]
+        
+        if self.userImagesArray.count > indexPath.row {
+            cell.imageView?.image = self.userImagesArray[indexPath.row];
+
+        }
+
+
+
 
         return cell
     }
@@ -61,7 +72,40 @@ class ContactsVC: UITableViewController {
         query?.whereKey("objectId", containedIn: PFUser.currentUser()?["chosenArray"] as! [String])
 
         query?.findObjectsInBackgroundWithBlock({ (results, error) -> Void in
-          print(results)
+
+            for result in results! {
+
+                self.contactsArray.append(result.name)
+
+                let imageFile = result["profileImage"] as! PFFile
+
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+
+                    imageFile.getDataInBackgroundWithBlock({ (imageData: NSData?, error: NSError?) -> Void in
+
+                        if error != nil {
+                            print(error)
+                        }else{
+                            dispatch_async(dispatch_get_main_queue()) { // 2
+
+                                if let data = imageData {
+
+
+                                    self.userImagesArray.append(UIImage(data: data)!)
+
+                                    self.tableView.reloadData()
+
+
+
+                                }
+                            }
+                        }
+                        
+                    })
+                })
+
+            }
+            self.tableView.reloadData()
         })
 
 
