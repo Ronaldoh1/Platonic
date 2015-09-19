@@ -37,10 +37,16 @@ class SwipeVC: UIViewController {
 
         }
 
-        self.updateImage()
+        //self.updateImage()
 
             }
 
+    @IBAction func logOut(sender: UIBarButtonItem) {
+
+        PFUser.logOut()
+
+
+    }
     //this is the method that will be called everytime the label is dragged.
     //We care about where we stared and where we ended up. We will create a translation.
     //The information we get back is the location (x,y) form the original center.
@@ -136,6 +142,7 @@ class SwipeVC: UIViewController {
         //w will make a user query call and download based on constraints.
 
         let query = User.query()
+
 
         query?.whereKey("lgbtOnly", equalTo: (PFUser.currentUser()?["lgbtOnly"]!)!)
 

@@ -56,6 +56,7 @@
 		F23C737D1BA3A2D100B114FE /* InterestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C737C1BA3A2D100B114FE /* InterestVC.swift */; settings = {ASSET_TAGS = (); }; };
 		F23C737F1BA3A61D00B114FE /* CompleteProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C737E1BA3A61D00B114FE /* CompleteProfileVC.swift */; settings = {ASSET_TAGS = (); }; };
 		F23C73841BA3B7EF00B114FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C73831BA3B7EF00B114FE /* User.swift */; settings = {ASSET_TAGS = (); }; };
+		F23EBE761BAD501000F61D85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23EBE751BAD501000F61D85 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +116,7 @@
 		F23C737C1BA3A2D100B114FE /* InterestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestVC.swift; sourceTree = "<group>"; };
 		F23C737E1BA3A61D00B114FE /* CompleteProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompleteProfileVC.swift; path = ../CompleteProfileVC.swift; sourceTree = "<group>"; };
 		F23C73831BA3B7EF00B114FE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F23EBE751BAD501000F61D85 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,8 @@
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				81BA814E1A49DA1800E65899 /* Main.storyboard */,
 				81BA81511A49DA1800E65899 /* Images.xcassets */,
+				F23EBE771BAD507E00F61D85 /* LaunchScreen */,
+				F23EBE751BAD501000F61D85 /* LaunchScreen.storyboard */,
 				81BA81481A49DA1800E65899 /* Supporting Files */,
 			);
 			name = Platonic;
@@ -330,6 +334,13 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
+		F23EBE771BAD507E00F61D85 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LaunchScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -410,6 +421,7 @@
 				F21EF0AE1BA7013A005575B5 /* blueDot.png in Resources */,
 				F21EF0B21BA702A7005575B5 /* inboxButton.png in Resources */,
 				81BA81521A49DA1800E65899 /* Images.xcassets in Resources */,
+				F23EBE761BAD501000F61D85 /* LaunchScreen.storyboard in Resources */,
 				F2368FA71BA074B2004F6492 /* cityOnlyLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,13 +567,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = ParseStarterProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.platonic.platonic;
@@ -574,13 +586,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = ParseStarterProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.platonic.platonic;

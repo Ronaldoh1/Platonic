@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zyr-oN-uD4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zyr-oN-uD4">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -46,28 +45,6 @@
                                     <action selector="onSignUpButtonTapped:" destination="Zyr-oN-uD4" eventType="touchUpInside" id="Psj-W6-b4x"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e8-xH-tWs">
-                                <rect key="frame" x="9" y="404" width="141" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="upQ-uA-5Iv"/>
-                                </constraints>
-                                <state key="normal" image="facebookLoginButton.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onSignInWithFacebookButtonTapped:" destination="Zyr-oN-uD4" eventType="touchUpInside" id="H5e-no-fr9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o69-is-1h3">
-                                <rect key="frame" x="171" y="404" width="140" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="9Be-lN-CWA"/>
-                                </constraints>
-                                <state key="normal" image="twitterLoginButton.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyy-0g-ygJ">
                                 <rect key="frame" x="157" y="413" width="7" height="21"/>
                                 <constraints>
@@ -93,27 +70,37 @@
                                     <action selector="onSignInButtonTapped:" destination="Zyr-oN-uD4" eventType="touchUpInside" id="rI8-0O-jfq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e8-xH-tWs">
+                                <rect key="frame" x="-8" y="390" width="336" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="iYR-xb-ORp"/>
+                                </constraints>
+                                <state key="normal" image="facebookLoginButton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSignInWithFacebookButtonTapped:" destination="Zyr-oN-uD4" eventType="touchUpInside" id="H5e-no-fr9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.78823529411764703" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="1xh-tj-uqK" firstAttribute="leading" secondItem="IBN-Q2-ZB5" secondAttribute="trailing" constant="2" id="0eO-wd-KUH"/>
                             <constraint firstItem="UwA-cv-eUx" firstAttribute="top" secondItem="ruu-aF-p3r" secondAttribute="bottom" constant="187" id="49W-j1-nRu"/>
-                            <constraint firstItem="Cyy-0g-ygJ" firstAttribute="leading" secondItem="6e8-xH-tWs" secondAttribute="trailing" constant="7" id="7A8-V9-NV9"/>
                             <constraint firstAttribute="centerX" secondItem="1xh-tj-uqK" secondAttribute="centerX" id="AS0-R7-aZm"/>
-                            <constraint firstItem="o69-is-1h3" firstAttribute="top" secondItem="o3e-hN-1po" secondAttribute="bottom" constant="30" id="AbF-aY-hpf"/>
                             <constraint firstAttribute="centerY" secondItem="IBN-Q2-ZB5" secondAttribute="centerY" constant="-116" id="EUT-Kd-3PF"/>
+                            <constraint firstItem="6e8-xH-tWs" firstAttribute="centerY" secondItem="sP3-6a-8hB" secondAttribute="centerY" constant="178" id="FQ0-4c-5Qx"/>
                             <constraint firstAttribute="centerX" secondItem="Cyy-0g-ygJ" secondAttribute="centerX" id="L6G-Sv-ujd"/>
-                            <constraint firstItem="6e8-xH-tWs" firstAttribute="leading" secondItem="sP3-6a-8hB" secondAttribute="leadingMargin" constant="-7" id="Nmg-XX-PO4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6e8-xH-tWs" secondAttribute="trailing" constant="-24" id="O0R-HO-gM3"/>
                             <constraint firstAttribute="centerY" secondItem="o3e-hN-1po" secondAttribute="centerY" constant="-116" id="Oih-BS-4WH"/>
                             <constraint firstItem="ruu-aF-p3r" firstAttribute="top" secondItem="sP3-6a-8hB" secondAttribute="topMargin" constant="64" id="Pd2-np-gi3"/>
                             <constraint firstItem="o3e-hN-1po" firstAttribute="leading" secondItem="1xh-tj-uqK" secondAttribute="trailing" constant="2" id="Qik-42-d5X"/>
                             <constraint firstItem="ruu-aF-p3r" firstAttribute="leading" secondItem="sP3-6a-8hB" secondAttribute="leadingMargin" constant="-16" id="WuB-qL-jel"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ruu-aF-p3r" secondAttribute="trailing" constant="-16" id="b44-IJ-fUb"/>
                             <constraint firstAttribute="centerY" secondItem="Cyy-0g-ygJ" secondAttribute="centerY" constant="-183.5" id="bw3-0N-0ST"/>
+                            <constraint firstItem="6e8-xH-tWs" firstAttribute="leading" secondItem="sP3-6a-8hB" secondAttribute="leadingMargin" constant="-24" id="dmS-vX-0te"/>
                             <constraint firstAttribute="centerY" secondItem="1xh-tj-uqK" secondAttribute="centerY" constant="-98.5" id="ehs-ID-OBZ"/>
-                            <constraint firstItem="o69-is-1h3" firstAttribute="leading" secondItem="Cyy-0g-ygJ" secondAttribute="trailing" constant="7" id="lVR-So-ndC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="o69-is-1h3" secondAttribute="trailing" constant="-7" id="oBZ-uc-UdU"/>
-                            <constraint firstItem="6e8-xH-tWs" firstAttribute="top" secondItem="IBN-Q2-ZB5" secondAttribute="bottom" constant="30" id="tkU-0s-r2x"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -130,6 +117,5 @@
     <resources>
         <image name="PlatonicLogo.png" width="625" height="250"/>
         <image name="facebookLoginButton.png" width="566" height="121"/>
-        <image name="twitterLoginButton.png" width="574" height="120"/>
     </resources>
 </document>
