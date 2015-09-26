@@ -139,7 +139,7 @@ class SwipeVC: UIViewController {
     @IBAction func onContactsButtonTapped(sender: UIBarButtonItem) {
 
         let storyboard = UIStoryboard(name: "Chat", bundle: nil)
-        let controller = storyboard.instantiateViewControllerWithIdentifier("ChatNavVC")
+        let controller = storyboard.instantiateViewControllerWithIdentifier("UsersNavVC")
 
         self.presentViewController(controller, animated: true, completion: nil)
 
