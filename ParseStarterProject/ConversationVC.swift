@@ -107,7 +107,7 @@ class ConversationVC: UIViewController, UIScrollViewDelegate, UITextViewDelegate
                 for object in results! {
 
 
-                self.resultsImageFiles.append(object["photo"] as! PFFile)
+                self.resultsImageFiles.append(object["profileImage"] as! PFFile)
 
 
 
@@ -128,7 +128,7 @@ class ConversationVC: UIViewController, UIScrollViewDelegate, UITextViewDelegate
 
                                     for object in results2! {
 
-                                        self.resultsImageFiles2.append(object["photo"] as! PFFile)
+                                        self.resultsImageFiles2.append(object["profileImage"] as! PFFile)
 
                                         self.resultsImageFiles2[0].getDataInBackgroundWithBlock({ (imageData2, error) -> Void in
 
@@ -408,7 +408,7 @@ class ConversationVC: UIViewController, UIScrollViewDelegate, UITextViewDelegate
 
 
                     
-                    let uQuery:PFQuery = PFUser.query()!
+                    let uQuery:PFQuery = User.query()!
                     uQuery.whereKey("username", equalTo: otherName)
 
                     let pushQuery:PFQuery = PFInstallation.query()!

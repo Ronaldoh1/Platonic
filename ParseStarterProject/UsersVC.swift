@@ -71,9 +71,12 @@ class UsersVC: UIViewController , UITableViewDelegate, UITableViewDataSource {
     func downloadContacts(){
 
         let query = User.query()
-        //check that the current user isn't included.
+        //Check if they have accepted us
+        query?.whereKey("chosenArray", equalTo: (PFUser.currentUser()?.objectId)!)
 
-        query?.whereKey("username", notEqualTo: currentUser)
+        //check if we have accepted them. Where their objectId is contained in our "chosenArray
+
+        query?.whereKey("objectId", containedIn: PFUser.currentUser()?["chosenArray"] as! [String])
 
         query?.findObjectsInBackgroundWithBlock({ (results, error) -> Void in
 
@@ -84,9 +87,9 @@ class UsersVC: UIViewController , UITableViewDelegate, UITableViewDataSource {
                 print(user)
 
                 self.resultsUsernameArray.append(user.username!)
-                self.resultsProfileNameArray.append(user["profileName"] as! (String))
+              //  self.resultsProfileNameArray.append(user["profileName"] as! (String))
 
-                let imageFile = result["photo"] as! PFFile
+                let imageFile = result["profileImage"] as! PFFile
                 self.resultsImageFilesArray.append(imageFile)
 
             }
@@ -167,7 +170,7 @@ class UsersVC: UIViewController , UITableViewDelegate, UITableViewDataSource {
 
 
         cell.userNameLabel.text = self.resultsUsernameArray[indexPath.row]
-        cell.profileNameLabel.text = self.resultsProfileNameArray[indexPath.row]
+      //  cell.profileNameLabel.text = self.resultsProfileNameArray[indexPath.row]
 
         let imageFile:PFFile = self.resultsImageFilesArray[indexPath.row]
 
