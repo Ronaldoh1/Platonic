@@ -11,6 +11,11 @@ import Parse
 
 class SwipeVC: UIViewController {
 
+    @IBOutlet weak var ocupationLabel: UILabel!
+    @IBOutlet weak var personalityLabel: UILabel!
+    @IBOutlet weak var schoolLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var aboutMeLabel: UILabel!
     @IBOutlet weak var userImage: UIImageView!
     var displayedUserID = ""
 
@@ -25,7 +30,14 @@ class SwipeVC: UIViewController {
         //add function for button
         button.addTarget(self, action: "profileButtonTapped", forControlEvents: UIControlEvents.TouchUpInside)
         //set frame
-        button.frame = CGRectMake(0, 0, 53, 31)
+        button.frame = CGRectMake(0, 0, 30, 30)
+
+        button.layer.cornerRadius = button.frame.size.height/2
+        button.clipsToBounds = true
+        button.layer.borderColor = UIColor.blackColor().CGColor
+        button.layer.borderWidth = 2.0
+        
+
 
         let barButton = UIBarButtonItem(customView: button)
         //assign button to navigationbar
@@ -226,6 +238,13 @@ class SwipeVC: UIViewController {
                     self.displayedUserID = object.objectId!
 
                     let imageFile = object["profileImage"] as! PFFile
+
+                    self.aboutMeLabel.text = object["about"] as? String
+                    self.nameLabel.text = object["name"] as? String
+                    self.schoolLabel.text = object["school"] as? String
+                    self.ocupationLabel.text = object["job"] as? String
+                    self.personalityLabel.text = object["personality"] as? String
+
 
                     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
 

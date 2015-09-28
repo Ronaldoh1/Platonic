@@ -28,7 +28,7 @@ class UsersVC: UIViewController , UITableViewDelegate, UITableViewDataSource {
       //  let theWidth = view.frame.size.width
         let theHeight = view.frame.size.height
 
-        self.tableView.frame = CGRectMake(0, 0, theHeight, theHeight - 64)
+        self.tableView.frame = CGRectMake(0, 0, theHeight, theHeight )
 
         currentUser = (PFUser.currentUser()?.username)!
 
@@ -50,7 +50,7 @@ class UsersVC: UIViewController , UITableViewDelegate, UITableViewDataSource {
         resultsProfileNameArray.removeAll(keepCapacity: false)
 
         resultsImageFilesArray.removeAll(keepCapacity: false)
-
+        self.downloadContacts()
       //  let predicate = NSPredicate(format: "username != '"+userName+"'")
             
         }
@@ -84,10 +84,10 @@ class UsersVC: UIViewController , UITableViewDelegate, UITableViewDataSource {
 
               let user = result as! PFUser
 
-                print(user)
+               // print(user)
 
-                self.resultsUsernameArray.append(user.username!)
-              //  self.resultsProfileNameArray.append(user["profileName"] as! (String))
+                self.resultsUsernameArray.append(user["username"] as! String)
+              self.resultsProfileNameArray.append(user["name"] as! (String))
 
                 let imageFile = result["profileImage"] as! PFFile
                 self.resultsImageFilesArray.append(imageFile)
@@ -139,11 +139,10 @@ class UsersVC: UIViewController , UITableViewDelegate, UITableViewDataSource {
     }
 
 
-    @IBAction func logOutButtonTapped(sender: AnyObject) {
+    @IBAction func onDoneButtonTapped(sender: UIBarButtonItem) {
 
-        PFUser.logOut()
 
-        self.navigationController?.popToRootViewControllerAnimated(true)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     override func viewWillAppear(animated: Bool) {
         self.navigationItem.hidesBackButton = true
@@ -169,8 +168,8 @@ class UsersVC: UIViewController , UITableViewDelegate, UITableViewDataSource {
         let cell:UserCustomCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UserCustomCell
 
 
-        cell.userNameLabel.text = self.resultsUsernameArray[indexPath.row]
-      //  cell.profileNameLabel.text = self.resultsProfileNameArray[indexPath.row]
+        //cell.userNameLabel.text = self.resultsUsernameArray[indexPath.row]
+        cell.profileNameLabel.text = self.resultsProfileNameArray[indexPath.row]
 
         let imageFile:PFFile = self.resultsImageFilesArray[indexPath.row]
 
@@ -205,10 +204,12 @@ class UsersVC: UIViewController , UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+
         let cell:UserCustomCell = tableView.cellForRowAtIndexPath(indexPath) as! UserCustomCell
 
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        otherName = cell.userNameLabel.text!;
+        otherName = self.resultsUsernameArray[indexPath.row]
         otherProfileName = cell.profileNameLabel.text!
         self.performSegueWithIdentifier("toConversation", sender: self)
     }

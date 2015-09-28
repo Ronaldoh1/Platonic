@@ -75,8 +75,8 @@ class ConversationVC: UIViewController, UIScrollViewDelegate, UITextViewDelegate
 
         self.messageLabel.text = "Please enter a message"
         self.messageLabel.backgroundColor = UIColor.clearColor()
-        self.messageLabel.textColor = UIColor.lightGrayColor()
-        self.messageLabel.frame = CGRectMake(0, 0, 100, 48)
+        self.messageLabel.textColor = UIColor.blackColor()
+        self.messageLabel.frame = CGRectMake(0, 0, 200, 48)
 
         self.messageTextView.addSubview(self.messageLabel)
 

@@ -17,6 +17,8 @@ class UserCustomCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
+        //self.userNameLabel.alpha = 0
+
        let theWidth = UIScreen.mainScreen().bounds.width
 
         contentView.frame = CGRectMake(0, 0, theWidth, 120)
