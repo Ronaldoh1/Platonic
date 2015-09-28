@@ -31,14 +31,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3e-hN-1po">
-                                <rect key="frame" x="164" y="338" width="140" height="36"/>
+                                <rect key="frame" x="164" y="343" width="140" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="Bnm-Tn-oQx"/>
                                     <constraint firstAttribute="height" constant="36" id="caf-a0-PkX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign Up">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -56,14 +56,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBN-Q2-ZB5">
-                                <rect key="frame" x="16" y="338" width="140" height="36"/>
+                                <rect key="frame" x="16" y="343" width="140" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="2vt-3D-v33"/>
                                     <constraint firstAttribute="height" constant="36" id="X7Y-Rk-Hlk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign In">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -71,9 +71,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e8-xH-tWs">
-                                <rect key="frame" x="-4" y="390" width="328" height="60"/>
+                                <rect key="frame" x="-4" y="400" width="328" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="iYR-xb-ORp"/>
+                                    <constraint firstAttribute="height" constant="64" id="iYR-xb-ORp"/>
                                 </constraints>
                                 <state key="normal" image="facebookLoginButton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -84,16 +84,16 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.78823529411764703" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="1xh-tj-uqK" firstAttribute="leading" secondItem="IBN-Q2-ZB5" secondAttribute="trailing" constant="2" id="0eO-wd-KUH"/>
                             <constraint firstItem="UwA-cv-eUx" firstAttribute="top" secondItem="ruu-aF-p3r" secondAttribute="bottom" constant="187" id="49W-j1-nRu"/>
                             <constraint firstAttribute="centerX" secondItem="1xh-tj-uqK" secondAttribute="centerX" id="AS0-R7-aZm"/>
-                            <constraint firstAttribute="centerY" secondItem="IBN-Q2-ZB5" secondAttribute="centerY" constant="-116" id="EUT-Kd-3PF"/>
-                            <constraint firstItem="6e8-xH-tWs" firstAttribute="centerY" secondItem="sP3-6a-8hB" secondAttribute="centerY" constant="180" id="FQ0-4c-5Qx"/>
+                            <constraint firstAttribute="centerY" secondItem="IBN-Q2-ZB5" secondAttribute="centerY" constant="-121" id="EUT-Kd-3PF"/>
+                            <constraint firstItem="6e8-xH-tWs" firstAttribute="centerY" secondItem="sP3-6a-8hB" secondAttribute="centerY" constant="192" id="FQ0-4c-5Qx"/>
                             <constraint firstAttribute="centerX" secondItem="Cyy-0g-ygJ" secondAttribute="centerX" id="L6G-Sv-ujd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6e8-xH-tWs" secondAttribute="trailing" constant="-20" id="O0R-HO-gM3"/>
-                            <constraint firstAttribute="centerY" secondItem="o3e-hN-1po" secondAttribute="centerY" constant="-116" id="Oih-BS-4WH"/>
+                            <constraint firstAttribute="centerY" secondItem="o3e-hN-1po" secondAttribute="centerY" constant="-121" id="Oih-BS-4WH"/>
                             <constraint firstItem="ruu-aF-p3r" firstAttribute="top" secondItem="sP3-6a-8hB" secondAttribute="topMargin" constant="64" id="Pd2-np-gi3"/>
                             <constraint firstItem="o3e-hN-1po" firstAttribute="leading" secondItem="1xh-tj-uqK" secondAttribute="trailing" constant="2" id="Qik-42-d5X"/>
                             <constraint firstItem="ruu-aF-p3r" firstAttribute="leading" secondItem="sP3-6a-8hB" secondAttribute="leadingMargin" constant="-16" id="WuB-qL-jel"/>
@@ -115,7 +115,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="PlatonicLogo.png" width="625" height="250"/>
+        <image name="PlatonicLogo.png" width="1250" height="1250"/>
         <image name="facebookLoginButton.png" width="566" height="121"/>
     </resources>
 </document>

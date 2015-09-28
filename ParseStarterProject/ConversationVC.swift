@@ -210,11 +210,11 @@ class ConversationVC: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     func keyboardWillHide(notification:NSNotification){
 
 
-        let dict:NSDictionary = notification.userInfo!
-
-        let s:NSValue = dict.valueForKey(UIKeyboardFrameEndUserInfoKey) as! NSValue
-
-        let rect:CGRect = s.CGRectValue()
+//        let dict:NSDictionary = notification.userInfo!
+//
+//        let s:NSValue = dict.valueForKey(UIKeyboardFrameEndUserInfoKey) as! NSValue
+//
+//       let rect:CGRect = s.CGRectValue()
 
         UIView.animateWithDuration(0.3, delay: 0, options: .CurveLinear, animations: {
 
@@ -235,7 +235,7 @@ class ConversationVC: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     func refreshResults(){
 
         let theWidth = self.view.frame.size.width
-        let theHeight = self.view.frame.size.height
+      //  let theHeight = self.view.frame.size.height
 
         self.messageX = 37.0
         self.messageY = 26.0

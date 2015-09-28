@@ -22,10 +22,12 @@ class WelcomeVC:  UIViewController {
 
         
         // Do any additional setup after loading the view, typically from a nib.
-        self.signInButton.layer.borderColor = UIColor.whiteColor().CGColor
+        self.signInButton.layer.borderColor = UIColor(red: 0/255.0, green: 201/255.0, blue: 132/255.0, alpha: 1).CGColor;
         self.signInButton.layer.borderWidth = 3.0
 
-        self.signUpButton.layer.borderColor = UIColor.whiteColor().CGColor
+
+        self.signUpButton.layer.borderColor = UIColor(red: 0/255.0, green: 201/255.0, blue: 132/255.0, alpha: 1).CGColor;
+
         self.signUpButton.layer.borderWidth = 3.0
 
 

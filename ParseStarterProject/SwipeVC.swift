@@ -13,9 +13,23 @@ class SwipeVC: UIViewController {
 
     @IBOutlet weak var userImage: UIImageView!
     var displayedUserID = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //add Nav Bar button
+
+        let button: UIButton = UIButton(type: UIButtonType.Custom) 
+        //set image for button
+        button.setImage(UIImage(named: "profileTempImage.png"), forState: UIControlState.Normal)
+        //add function for button
+        button.addTarget(self, action: "profileButtonTapped", forControlEvents: UIControlEvents.TouchUpInside)
+        //set frame
+        button.frame = CGRectMake(0, 0, 53, 31)
+
+        let barButton = UIBarButtonItem(customView: button)
+        //assign button to navigationbar
+        self.navigationItem.leftBarButtonItem = barButton
 
         //create a gesture recognizer - this will allow us to drag the label.
         //The target it's the viewcontroller (self) the selector is "wasDragged:" which is the method that will allow us to drag it.
@@ -78,7 +92,7 @@ class SwipeVC: UIViewController {
 
         //need a scale to make it smaller
 
-        let scale = min(100 / abs(xFromCenter), 1)
+        //let scale = min(100 / abs(xFromCenter), 1)
 
         //the angle is a radian.
         //we need one radian of rotation.
@@ -143,6 +157,10 @@ class SwipeVC: UIViewController {
 
         self.presentViewController(controller, animated: true, completion: nil)
 
+    }
+
+    func profileButtonTapped(){
+        print("it worked")
     }
     func updateImage(){
 

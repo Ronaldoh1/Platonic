@@ -33,8 +33,18 @@ class SignUpVC: UIViewController {
         user.signUpInBackgroundWithBlock {
             (succeeded: Bool, error: NSError?) -> Void in
             if let error = error {
-                let errorString = error.userInfo["error"] as? NSString
+                //let errorString = error.userInfo["error"] as? NSString
                 // Show the errorString somewhere and let the user try again.
+                //Create the AlertController
+                let actionSheetController: UIAlertController = UIAlertController(title: "Error Signing Up", message: error.description , preferredStyle: .Alert)
+
+                //Create and add the Cancel action
+                let cancelAction: UIAlertAction = UIAlertAction(title: "Ok", style: .Cancel) { action -> Void in
+                    //Do some stuff
+
+
+                }
+                actionSheetController.addAction(cancelAction)
             } else {
                 // Hooray! Let them use the app now.
 

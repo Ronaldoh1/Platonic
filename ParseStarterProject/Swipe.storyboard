@@ -31,14 +31,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Platonic" id="Mc4-qN-Wox">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Nd1-PT-Jpj">
-                            <connections>
-                                <action selector="logOut:" destination="Dau-Ag-UaE" id="Pro-0v-inY"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="inboxButton.png" id="P1m-yJ-q3t">
-                            <inset key="imageInsets" minX="13" minY="10" maxX="6" maxY="5"/>
-                            <color key="tintColor" name="knobColor" catalog="System" colorSpace="catalog"/>
+                            <inset key="imageInsets" minX="23" minY="13" maxX="7" maxY="5"/>
+                            <color key="tintColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="onContactsButtonTapped:" destination="Dau-Ag-UaE" id="Muw-Wc-Xn3"/>
                             </connections>
@@ -51,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ag-w4-Gse" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1112" y="392"/>
+            <point key="canvasLocation" x="650" y="413"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gaY-vO-MuK">

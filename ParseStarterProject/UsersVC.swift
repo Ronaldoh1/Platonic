@@ -25,7 +25,7 @@ class UsersVC: UIViewController , UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
 
         //we need to get the width and the height of screen.
-        let theWidth = view.frame.size.width
+      //  let theWidth = view.frame.size.width
         let theHeight = view.frame.size.height
 
         self.tableView.frame = CGRectMake(0, 0, theHeight, theHeight - 64)

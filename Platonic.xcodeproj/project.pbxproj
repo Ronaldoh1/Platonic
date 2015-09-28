@@ -32,16 +32,27 @@
 		F228B40D1BB75C6B006BE492 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F228B40B1BB75C6B006BE492 /* UsersVC.swift */; settings = {ASSET_TAGS = (); }; };
 		F228B4101BB75CCB006BE492 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F228B40E1BB75CCB006BE492 /* Message.swift */; settings = {ASSET_TAGS = (); }; };
 		F228B4111BB75CCB006BE492 /* ConversationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F228B40F1BB75CCB006BE492 /* ConversationVC.swift */; settings = {ASSET_TAGS = (); }; };
+		F228B4131BB8D20F006BE492 /* PlatonicLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B4121BB8D20F006BE492 /* PlatonicLogo.png */; settings = {ASSET_TAGS = (); }; };
+		F228B4211BB8E39A006BE492 /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B4141BB8E399006BE492 /* AppIcon29x29.png */; settings = {ASSET_TAGS = (); }; };
+		F228B4221BB8E39A006BE492 /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B4151BB8E399006BE492 /* AppIcon29x29@2x.png */; settings = {ASSET_TAGS = (); }; };
+		F228B4231BB8E39A006BE492 /* AppIcon29x29@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B4161BB8E399006BE492 /* AppIcon29x29@2x~ipad.png */; settings = {ASSET_TAGS = (); }; };
+		F228B4241BB8E39A006BE492 /* AppIcon29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B4171BB8E399006BE492 /* AppIcon29x29@3x.png */; settings = {ASSET_TAGS = (); }; };
+		F228B4251BB8E39A006BE492 /* AppIcon29x29~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B4181BB8E399006BE492 /* AppIcon29x29~ipad.png */; settings = {ASSET_TAGS = (); }; };
+		F228B4261BB8E39A006BE492 /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B4191BB8E399006BE492 /* AppIcon40x40@2x.png */; settings = {ASSET_TAGS = (); }; };
+		F228B4271BB8E39A006BE492 /* AppIcon40x40@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B41A1BB8E399006BE492 /* AppIcon40x40@2x~ipad.png */; settings = {ASSET_TAGS = (); }; };
+		F228B4281BB8E39A006BE492 /* AppIcon40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B41B1BB8E399006BE492 /* AppIcon40x40@3x.png */; settings = {ASSET_TAGS = (); }; };
+		F228B4291BB8E39A006BE492 /* AppIcon40x40~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B41C1BB8E399006BE492 /* AppIcon40x40~ipad.png */; settings = {ASSET_TAGS = (); }; };
+		F228B42A1BB8E39A006BE492 /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B41D1BB8E399006BE492 /* AppIcon60x60@2x.png */; settings = {ASSET_TAGS = (); }; };
+		F228B42B1BB8E39A006BE492 /* AppIcon60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B41E1BB8E399006BE492 /* AppIcon60x60@3x.png */; settings = {ASSET_TAGS = (); }; };
+		F228B42C1BB8E39A006BE492 /* AppIcon76x76@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B41F1BB8E39A006BE492 /* AppIcon76x76@2x~ipad.png */; settings = {ASSET_TAGS = (); }; };
+		F228B42D1BB8E39A006BE492 /* AppIcon76x76~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B4201BB8E39A006BE492 /* AppIcon76x76~ipad.png */; settings = {ASSET_TAGS = (); }; };
+		F228B42F1BB8F724006BE492 /* profileButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F228B42E1BB8F724006BE492 /* profileButtonImage.png */; settings = {ASSET_TAGS = (); }; };
 		F2368F981BA06BCB004F6492 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368F971BA06BCB004F6492 /* SignIn.storyboard */; settings = {ASSET_TAGS = (); }; };
 		F2368F9C1BA0710F004F6492 /* Swipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368F9B1BA0710F004F6492 /* Swipe.storyboard */; settings = {ASSET_TAGS = (); }; };
 		F2368F9E1BA07129004F6492 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368F9D1BA07129004F6492 /* Welcome.storyboard */; settings = {ASSET_TAGS = (); }; };
 		F2368FA01BA0720E004F6492 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368F9F1BA0720E004F6492 /* SignUp.storyboard */; settings = {ASSET_TAGS = (); }; };
 		F2368FA31BA07228004F6492 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2368FA21BA07228004F6492 /* Profile.storyboard */; settings = {ASSET_TAGS = (); }; };
-		F2368FA71BA074B2004F6492 /* cityOnlyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2368FA41BA074B2004F6492 /* cityOnlyLogo.png */; settings = {ASSET_TAGS = (); }; };
 		F2368FA81BA074B2004F6492 /* facebookLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2368FA51BA074B2004F6492 /* facebookLoginButton.png */; settings = {ASSET_TAGS = (); }; };
-		F2368FA91BA074B2004F6492 /* twitterLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2368FA61BA074B2004F6492 /* twitterLoginButton.png */; settings = {ASSET_TAGS = (); }; };
-		F2368FAC1BA074F6004F6492 /* IntownLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2368FAB1BA074F6004F6492 /* IntownLogo.png */; settings = {ASSET_TAGS = (); }; };
-		F2368FBB1BA0EEDB004F6492 /* PlatonicLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2368FBA1BA0EEDB004F6492 /* PlatonicLogo.png */; settings = {ASSET_TAGS = (); }; };
 		F23C736A1BA1C0D800B114FE /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB61BA076F3004F6492 /* ProfileVC.swift */; };
 		F23C736B1BA1C0D800B114FE /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB41BA076E0004F6492 /* SignUpVC.swift */; };
 		F23C736C1BA1C0D800B114FE /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2368FB21BA076CB004F6492 /* WelcomeVC.swift */; };
@@ -90,20 +101,31 @@
 		F228B40B1BB75C6B006BE492 /* UsersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		F228B40E1BB75CCB006BE492 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		F228B40F1BB75CCB006BE492 /* ConversationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationVC.swift; sourceTree = "<group>"; };
+		F228B4121BB8D20F006BE492 /* PlatonicLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlatonicLogo.png; sourceTree = "<group>"; };
+		F228B4141BB8E399006BE492 /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
+		F228B4151BB8E399006BE492 /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
+		F228B4161BB8E399006BE492 /* AppIcon29x29@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x~ipad.png"; sourceTree = "<group>"; };
+		F228B4171BB8E399006BE492 /* AppIcon29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@3x.png"; sourceTree = "<group>"; };
+		F228B4181BB8E399006BE492 /* AppIcon29x29~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29~ipad.png"; sourceTree = "<group>"; };
+		F228B4191BB8E399006BE492 /* AppIcon40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@2x.png"; sourceTree = "<group>"; };
+		F228B41A1BB8E399006BE492 /* AppIcon40x40@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@2x~ipad.png"; sourceTree = "<group>"; };
+		F228B41B1BB8E399006BE492 /* AppIcon40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@3x.png"; sourceTree = "<group>"; };
+		F228B41C1BB8E399006BE492 /* AppIcon40x40~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40~ipad.png"; sourceTree = "<group>"; };
+		F228B41D1BB8E399006BE492 /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@2x.png"; sourceTree = "<group>"; };
+		F228B41E1BB8E399006BE492 /* AppIcon60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@3x.png"; sourceTree = "<group>"; };
+		F228B41F1BB8E39A006BE492 /* AppIcon76x76@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon76x76@2x~ipad.png"; sourceTree = "<group>"; };
+		F228B4201BB8E39A006BE492 /* AppIcon76x76~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon76x76~ipad.png"; sourceTree = "<group>"; };
+		F228B42E1BB8F724006BE492 /* profileButtonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileButtonImage.png; sourceTree = "<group>"; };
 		F2368F971BA06BCB004F6492 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		F2368F9B1BA0710F004F6492 /* Swipe.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Swipe.storyboard; sourceTree = "<group>"; };
 		F2368F9D1BA07129004F6492 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		F2368F9F1BA0720E004F6492 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		F2368FA21BA07228004F6492 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		F2368FA41BA074B2004F6492 /* cityOnlyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cityOnlyLogo.png; sourceTree = SOURCE_ROOT; };
 		F2368FA51BA074B2004F6492 /* facebookLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookLoginButton.png; sourceTree = SOURCE_ROOT; };
-		F2368FA61BA074B2004F6492 /* twitterLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterLoginButton.png; sourceTree = SOURCE_ROOT; };
-		F2368FAB1BA074F6004F6492 /* IntownLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IntownLogo.png; path = ../../InTownApp/IntownLogo.png; sourceTree = "<group>"; };
 		F2368FB01BA076B5004F6492 /* SinginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinginVC.swift; sourceTree = "<group>"; };
 		F2368FB21BA076CB004F6492 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		F2368FB41BA076E0004F6492 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		F2368FB61BA076F3004F6492 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
-		F2368FBA1BA0EEDB004F6492 /* PlatonicLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlatonicLogo.png; sourceTree = "<group>"; };
 		F23C73701BA3726400B114FE /* SwipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeVC.swift; sourceTree = "<group>"; };
 		F23C73751BA3734F00B114FE /* CompleteProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CompleteProfile.storyboard; sourceTree = "<group>"; };
 		F23C73781BA3755F00B114FE /* Policy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Policy.storyboard; sourceTree = "<group>"; };
@@ -276,17 +298,28 @@
 		F2368FAA1BA074BF004F6492 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F228B42E1BB8F724006BE492 /* profileButtonImage.png */,
+				F228B4141BB8E399006BE492 /* AppIcon29x29.png */,
+				F228B4151BB8E399006BE492 /* AppIcon29x29@2x.png */,
+				F228B4161BB8E399006BE492 /* AppIcon29x29@2x~ipad.png */,
+				F228B4171BB8E399006BE492 /* AppIcon29x29@3x.png */,
+				F228B4181BB8E399006BE492 /* AppIcon29x29~ipad.png */,
+				F228B4191BB8E399006BE492 /* AppIcon40x40@2x.png */,
+				F228B41A1BB8E399006BE492 /* AppIcon40x40@2x~ipad.png */,
+				F228B41B1BB8E399006BE492 /* AppIcon40x40@3x.png */,
+				F228B41C1BB8E399006BE492 /* AppIcon40x40~ipad.png */,
+				F228B41D1BB8E399006BE492 /* AppIcon60x60@2x.png */,
+				F228B41E1BB8E399006BE492 /* AppIcon60x60@3x.png */,
+				F228B41F1BB8E39A006BE492 /* AppIcon76x76@2x~ipad.png */,
+				F228B4201BB8E39A006BE492 /* AppIcon76x76~ipad.png */,
 				F21EF0A91BA7013A005575B5 /* aqua.png */,
 				F21EF0B11BA702A7005575B5 /* inboxButton.png */,
 				F21EF0AA1BA7013A005575B5 /* blueDot.png */,
 				F21EF0AB1BA7013A005575B5 /* defaultImage.png */,
 				F21EF0AC1BA7013A005575B5 /* grey_2.png */,
 				F21EF0941BA588D5005575B5 /* profileTempImage.png */,
-				F2368FBA1BA0EEDB004F6492 /* PlatonicLogo.png */,
-				F2368FAB1BA074F6004F6492 /* IntownLogo.png */,
-				F2368FA41BA074B2004F6492 /* cityOnlyLogo.png */,
 				F2368FA51BA074B2004F6492 /* facebookLoginButton.png */,
-				F2368FA61BA074B2004F6492 /* twitterLoginButton.png */,
+				F228B4121BB8D20F006BE492 /* PlatonicLogo.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -358,6 +391,7 @@
 				TargetAttributes = {
 					81BA81441A49DA1800E65899 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = A37GTC4NZF;
 					};
 				};
 			};
@@ -384,28 +418,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F228B42D1BB8E39A006BE492 /* AppIcon76x76~ipad.png in Resources */,
 				F2368F9E1BA07129004F6492 /* Welcome.storyboard in Resources */,
 				F21EF0951BA588D5005575B5 /* profileTempImage.png in Resources */,
+				F228B4291BB8E39A006BE492 /* AppIcon40x40~ipad.png in Resources */,
 				F2368F981BA06BCB004F6492 /* SignIn.storyboard in Resources */,
+				F228B42C1BB8E39A006BE492 /* AppIcon76x76@2x~ipad.png in Resources */,
 				F2368FA01BA0720E004F6492 /* SignUp.storyboard in Resources */,
 				F23C73761BA3734F00B114FE /* CompleteProfile.storyboard in Resources */,
 				F21EF0B01BA7013A005575B5 /* grey_2.png in Resources */,
 				F2368F9C1BA0710F004F6492 /* Swipe.storyboard in Resources */,
+				F228B4211BB8E39A006BE492 /* AppIcon29x29.png in Resources */,
+				F228B4281BB8E39A006BE492 /* AppIcon40x40@3x.png in Resources */,
 				F23C73791BA3755F00B114FE /* Policy.storyboard in Resources */,
-				F2368FAC1BA074F6004F6492 /* IntownLogo.png in Resources */,
 				81BA81501A49DA1800E65899 /* Main.storyboard in Resources */,
+				F228B4221BB8E39A006BE492 /* AppIcon29x29@2x.png in Resources */,
+				F228B42B1BB8E39A006BE492 /* AppIcon60x60@3x.png in Resources */,
+				F228B4261BB8E39A006BE492 /* AppIcon40x40@2x.png in Resources */,
+				F228B42A1BB8E39A006BE492 /* AppIcon60x60@2x.png in Resources */,
+				F228B4231BB8E39A006BE492 /* AppIcon29x29@2x~ipad.png in Resources */,
+				F228B42F1BB8F724006BE492 /* profileButtonImage.png in Resources */,
 				F21EF0AF1BA7013A005575B5 /* defaultImage.png in Resources */,
 				F21EF0B51BA79B2B005575B5 /* Chat.storyboard in Resources */,
-				F2368FBB1BA0EEDB004F6492 /* PlatonicLogo.png in Resources */,
 				F2368FA81BA074B2004F6492 /* facebookLoginButton.png in Resources */,
 				F2368FA31BA07228004F6492 /* Profile.storyboard in Resources */,
-				F2368FA91BA074B2004F6492 /* twitterLoginButton.png in Resources */,
 				F21EF0AD1BA7013A005575B5 /* aqua.png in Resources */,
 				F21EF0AE1BA7013A005575B5 /* blueDot.png in Resources */,
+				F228B4271BB8E39A006BE492 /* AppIcon40x40@2x~ipad.png in Resources */,
 				F21EF0B21BA702A7005575B5 /* inboxButton.png in Resources */,
+				F228B4241BB8E39A006BE492 /* AppIcon29x29@3x.png in Resources */,
+				F228B4251BB8E39A006BE492 /* AppIcon29x29~ipad.png in Resources */,
 				81BA81521A49DA1800E65899 /* Images.xcassets in Resources */,
+				F228B4131BB8D20F006BE492 /* PlatonicLogo.png in Resources */,
 				F23EBE761BAD501000F61D85 /* LaunchScreen.storyboard in Resources */,
-				F2368FA71BA074B2004F6492 /* cityOnlyLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +596,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -564,6 +610,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.platonic.platonic;
 				PRODUCT_NAME = Platonic;
 				SWIFT_OBJC_BRIDGING_HEADER = "ParseStarterProject/ParseStarterProject-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -571,6 +618,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -584,6 +632,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.platonic.platonic;
 				PRODUCT_NAME = Platonic;
 				SWIFT_OBJC_BRIDGING_HEADER = "ParseStarterProject/ParseStarterProject-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
